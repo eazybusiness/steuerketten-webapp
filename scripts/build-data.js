@@ -213,32 +213,55 @@ async function buildData() {
   
   console.log(`📊 ${rawData.length} Fahrzeuge in Rohdaten gefunden`);
   
-  // Daten verarbeiten
-  const processed = rawData.map(item => {
+  // Daten verarbeiten - erzeuge Seite pro Generation mit allen Motorvarianten
+  const processed = [];
+  
+  rawData.forEach(item => {
     const marke = item.marke || 'Unbekannt';
     const modell = item.modell || 'Unbekannt';
-    const generation = item.generationen?.[0]?.name?.replace(marke, '').trim() || '';
     
-    // Basis-Datensatz
-    const vehicle = {
-      id: createSlug(`${marke}-${modell}-${generation}`),
-      marke,
-      modell,
-      slug: createSlug(`${marke}-${modell}-${generation}`),
-      generation,
-      baujahre: item.baujahre || null,
-      steuertrieb: item.steuertrieb || 'Unbekannt',
-      quelle: item.quelle || 'autosmotor.de',
-      motoren: item.motoren ? enrichMotors(item.motoren, `${marke} ${modell} ${generation}`) : [],
-      faq: generateFAQ({ marke, modell, generation, steuertrieb: item.steuertrieb }),
-      meta: {
-        risikoBewertung: item.steuertrieb === 'Steuerkette' ? 'Mittel' : 'Gering',
-        beliebtheit: Math.floor(Math.random() * 10) + 1, // TODO: echte Daten
-        letzteAktualisierung: new Date().toISOString().split('T')[0],
-      }
-    };
-    
-    return vehicle;
+    // Jede Generation bekommt eigene Seite
+    (item.generationen || []).forEach((gen, index) => {
+      const generation = gen.name?.replace(marke, '').trim() || `Gen-${index + 1}`;
+      const slug = createSlug(`${marke}-${modell}-${generation}`);
+      
+      // Motoren aus dieser Generation extrahieren
+      const motoren = (gen.motoren || []).map(m => ({
+        bezeichnung: m.motorisierung || 'Unbekannt',
+        code: m.motorcode || '',
+        leistung: m.leistung || '',
+        bauzeit: m.bauzeit || gen.baujahre || '',
+        steuertrieb: m.steuertrieb || 'Unbekannt',
+        intervall: m.intervall || '',
+      }));
+      
+      // Steuertrieb-Typ ermitteln (Zahnriemen/Steuerkette/Beides)
+      const steuertriebe = [...new Set(motoren.map(m => m.steuertrieb))];
+      const steuertrieb = steuertriebe.length === 1 
+        ? steuertriebe[0] 
+        : (steuertriebe.length > 1 ? 'Beides (je nach Motor)' : 'Unbekannt');
+      
+      // Basis-Datensatz
+      const vehicle = {
+        id: slug,
+        marke,
+        modell,
+        slug,
+        generation,
+        baujahre: gen.baujahre || item.baujahre || null,
+        steuertrieb,
+        quelle: 'autosmotor.de',
+        motoren: enrichMotors(motoren, `${marke} ${modell} ${generation}`),
+        faq: generateFAQ({ marke, modell, generation, steuertrieb }),
+        meta: {
+          risikoBewertung: steuertrieb.includes('Steuerkette') ? 'Mittel' : 'Gering',
+          beliebtheit: Math.floor(Math.random() * 10) + 1,
+          letzteAktualisierung: new Date().toISOString().split('T')[0],
+        }
+      };
+      
+      processed.push(vehicle);
+    });
   });
   
   // Statistiken
