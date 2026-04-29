@@ -1,0 +1,241 @@
+---
+// Startseite — Suche + Beliebte Modelle + Alle Marken
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_CONFIG } from '../content/config.ts';
+import vehicles from '../../data/processed/vehicles.json';
+
+const title = 'Steuerkette oder Zahnriemen? Finde es sofort heraus';
+const description = SITE_CONFIG.description;
+
+// Top 10 beliebteste Fahrzeuge
+const topVehicles = vehicles
+  .sort((a, b) => b.meta.beliebtheit - a.meta.beliebtheit)
+  .slice(0, 10);
+
+// Alle Marken (eindeutig)
+const marken = [...new Set(vehicles.map(v => v.marke))].sort();
+
+// Statistiken
+const stats = {
+  total: vehicles.length,
+  steuerkette: vehicles.filter(v => v.steuertrieb === 'Steuerkette').length,
+  zahnriemen: vehicles.filter(v => v.steuertrieb === 'Zahnriemen').length,
+  beides: vehicles.filter(v => v.steuertrieb === 'Beides').length,
+};
+
+// Schema.org for Organization
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": SITE_CONFIG.name,
+  "url": SITE_CONFIG.url,
+  "description": description,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${SITE_CONFIG.url}/suche?q={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+---
+
+<BaseLayout {title} {description} {schema}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Steuerkette oder Zahnriemen?
+      </h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Finde sofort heraus, welchen Steuertrieb dein Auto hat. 
+        Mit Wechselkosten, Risiko-Analyse und Experten-Tipps.
+      </p>
+      
+      <!-- Search Box -->
+      <div class="max-w-xl mx-auto bg-white rounded-xl p-2 shadow-lg">
+        <div id="pagefind-hero" class="w-full"></div>
+      </div>
+      
+      <!-- Stats -->
+      <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm text-blue-200">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-white">{stats.total}</span>
+          <span>Fahrzeuge</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-white">{marken.length}</span>
+          <span>Marken</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-green-400">{stats.steuerkette}</span>
+          <span>mit Steuerkette</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-blue-300">{stats.zahnriemen}</span>
+          <span>mit Zahnriemen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Beliebte Modelle -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+      Beliebte Modelle
+    </h2>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      {topVehicles.map(vehicle => (
+        <a 
+          href={`/marke/${vehicle.marke.toLowerCase()}/${vehicle.slug}/`}
+          class="group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 border border-gray-100"
+        >
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg font-semibold text-gray-900 group-hover:text-blue-600">
+              {vehicle.marke} {vehicle.modell}
+            </span>
+            <span class={`text-2xl ${
+              vehicle.steuertrieb === 'Steuerkette' ? 'text-green-500' : 'text-blue-500'
+            }`}>
+              {vehicle.steuertrieb === 'Steuerkette' ? '⛓️' : '⚙️'}
+            </span>
+          </div>
+          <p class="text-sm text-gray-500">
+            {vehicle.steuertrieb}
+          </p>
+          {vehicle.generation && (
+            <p class="text-xs text-gray-400 mt-1">
+              {vehicle.generation}
+            </p>
+          )}
+        </a>
+      ))}
+    </div>
+  </section>
+  
+  <!-- Alle Marken -->
+  <section class="max-w-6xl mx-auto px-4 py-16 bg-gray-50">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+      Alle Marken
+    </h2>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+      {marken.map(marke => {
+        const count = vehicles.filter(v => v.marke === marke).length;
+        return (
+          <a 
+            href={`/marke/${marke.toLowerCase()}/`}
+            class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <span class="font-medium text-gray-900">{marke}</span>
+            <span class="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
+              {count}
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+  
+  <!-- Info Section -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+      Steuerkette vs. Zahnriemen — Der Unterschied
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-green-50 rounded-xl p-6">
+        <div class="flex items-center mb-4">
+          <span class="text-3xl mr-3">⛓️</span>
+          <h3 class="text-xl font-bold text-green-900">Steuerkette</h3>
+        </div>
+        <ul class="space-y-3 text-green-800">
+          <li class="flex items-start">
+            <span class="text-green-600 mr-2">✓</span>
+            <span>Lebenslang haltbar (theoretisch wartungsfrei)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-600 mr-2">✓</span>
+            <span>Wird von Öl geschmiert</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-500 mr-2">✗</span>
+            <span>Bei Verschleiß teure Reparatur (€1.000–3.000)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-500 mr-2">✗</span>
+            <span>Kettengeräusch = Warnsignal</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-blue-50 rounded-xl p-6">
+        <div class="flex items-center mb-4">
+          <span class="text-3xl mr-3">⚙️</span>
+          <h3 class="text-xl font-bold text-blue-900">Zahnriemen</h3>
+        </div>
+        <ul class="space-y-3 text-blue-800">
+          <li class="flex items-start">
+            <span class="text-blue-600 mr-2">✓</span>
+            <span>Leiser, leichter als Steuerkette</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-600 mr-2">✓</span>
+            <span>Regelmäßiger Wechsel planbar</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-500 mr-2">✗</span>
+            <span>Riss = Motorschaden (Zweitakt)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-500 mr-2">✗</span>
+            <span>Alle 120.000–180.000 km wechseln</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Partner CTA -->
+  {SITE_CONFIG.ohauto.enabled && (
+    <section class="max-w-4xl mx-auto px-4 py-16">
+      <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">
+          Willst du dein Auto verkaufen?
+        </h2>
+        <p class="text-blue-100 mb-6 max-w-xl mx-auto">
+          Wir sind Partner von ohAuto.de — deinem seriösen Auto-Ankäufer in Wiesbaden 
+          und dem Rhein-Main-Gebiet. Faire Preise, Sofortzahlung, kostenlose Abholung.
+        </p>
+        <a 
+          href={SITE_CONFIG.ohauto.url}
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+        >
+          Jetzt Angebot anfordern
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<script>
+  // Initialize Pagefind in hero
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.PagefindUI) {
+      new PagefindUI({ 
+        element: "#pagefind-hero",
+        translations: {
+          placeholder: "Marke oder Modell suchen...",
+          zero_results: "Keine Ergebnisse für \"[SEARCH_TERM]\"",
+        }
+      });
+    }
+  });
+</script>

@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vehicle Schema",
+  "description": "Schema für Fahrzeugdaten (Steuerkette/Zahnriemen)",
+  "type": "object",
+  "required": ["id", "marke", "modell", "slug"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Eindeutige ID (marke-modell-generation)"
+    },
+    "marke": {
+      "type": "string",
+      "description": "Fahrzeugmarke"
+    },
+    "modell": {
+      "type": "string",
+      "description": "Modellbezeichnung"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-freundlicher Name (keine Leerzeichen, Umlaute)"
+    },
+    "generation": {
+      "type": "string",
+      "description": "Generation (z.B. '7', 'J', 'III')"
+    },
+    "baujahre": {
+      "type": "object",
+      "properties": {
+        "von": { "type": "integer" },
+        "bis": { "type": "integer" }
+      }
+    },
+    "steuertrieb": {
+      "type": "string",
+      "enum": ["Steuerkette", "Zahnriemen", "Beides", "Unbekannt"]
+    },
+    "motoren": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/motor"
+      }
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/faqItem"
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "risikoBewertung": { "type": "string" },
+        "beliebtheit": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "letzteAktualisierung": { "type": "string", "format": "date" }
+      }
+    }
+  },
+  "definitions": {
+    "motor": {
+      "type": "object",
+      "required": ["code", "bezeichnung"],
+      "properties": {
+        "code": { "type": "string" },
+        "bezeichnung": { "type": "string" },
+        "hubraum": { "type": "number" },
+        "ps": { "type": "integer" },
+        "kw": { "type": "number" },
+        "kraftstoff": { "type": "string", "enum": ["Benzin", "Diesel", "Hybrid", "Elektro"] },
+        "steuertrieb": { "type": "string", "enum": ["Steuerkette", "Zahnriemen"] },
+        "wechselIntervallKm": { "type": "integer" },
+        "wechselIntervallJahre": { "type": "integer" },
+        "wechselKostenMin": { "type": "integer" },
+        "wechselKostenMax": { "type": "integer" },
+        "risikoPunkte": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "faqItem": {
+      "type": "object",
+      "required": ["frage", "antwort"],
+      "properties": {
+        "frage": { "type": "string" },
+        "antwort": { "type": "string" },
+        "schemaType": { "type": "string", "enum": ["FAQPage", "HowTo"] }
+      }
+    }
+  }
+}

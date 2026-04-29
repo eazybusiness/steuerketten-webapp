@@ -1,0 +1,193 @@
+---
+// VehicleLayout.astro — Layout für Fahrzeug-Detailseiten
+import BaseLayout from './BaseLayout.astro';
+import { SITE_CONFIG } from '../content/config.ts';
+import MotorTable from '../components/vehicle/MotorTable.astro';
+import FAQSection from '../components/seo/FAQSection.astro';
+import AnkaufCTA from '../components/vehicle/AnkaufCTA.astro';
+import Breadcrumbs from '../components/seo/Breadcrumbs.astro';
+
+export interface Props {
+  vehicle: {
+    id: string;
+    marke: string;
+    modell: string;
+    slug: string;
+    generation: string;
+    baujahre?: { von: number; bis: number };
+    steuertrieb: string;
+    motoren: Array<{
+      code: string;
+      bezeichnung: string;
+      hubraum: number;
+      ps: number;
+      kw: number;
+      kraftstoff: string;
+      steuertrieb: string;
+      wechselKostenMin?: number;
+      wechselKostenMax?: number;
+      risikoPunkte?: string[];
+      risikoLevel?: string;
+    }>;
+    faq: Array<{
+      frage: string;
+      antwort: string;
+      schemaType: string;
+    }>;
+    meta: {
+      risikoBewertung: string;
+      beliebtheit: number;
+      letzteAktualisierung: string;
+    };
+  };
+}
+
+const { vehicle } = Astro.props;
+
+const fullName = `${vehicle.marke} ${vehicle.modell} ${vehicle.generation}`.trim();
+const title = `${fullName} – Steuerkette oder Zahnriemen?`;
+const description = `Finde sofort heraus: ${fullName} hat ${vehicle.steuertrieb}. Motor-Übersicht, Wechselkosten und Risiko-Analyse.`;
+
+// Schema.org: Vehicle + FAQPage
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Vehicle",
+      "name": fullName,
+      "brand": {
+        "@type": "Brand",
+        "name": vehicle.marke
+      },
+      "model": vehicle.modell,
+      "vehicleEngine": vehicle.motoren.map(m => ({
+        "@type": "EngineSpecification",
+        "name": m.bezeichnung,
+        "engineType": m.steuertrieb === 'Steuerkette' ? 'Steuerkette' : 'Zahnriemen'
+      }))
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": vehicle.faq.map(f => ({
+        "@type": "Question",
+        "name": f.frage,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.antwort
+        }
+      }))
+    }
+  ]
+};
+
+// Breadcrumb-Schema
+const breadcrumbs = [
+  { name: 'Start', url: '/' },
+  { name: 'Marken', url: '/marke/' },
+  { name: vehicle.marke, url: `/marke/${vehicle.marke.toLowerCase()}/` },
+  { name: fullName, url: Astro.url.pathname },
+];
+---
+
+<BaseLayout {title} {description} {schema}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Breadcrumbs -->
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <!-- Hero: Sofort-Antwort -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {fullName}
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          Baujahre: {vehicle.baujahre ? `${vehicle.baujahre.von}–${vehicle.baujahre.bis}` : 'Verschiedene'}
+        </p>
+        
+        <!-- Sofort-Antwort -->
+        <div class={`inline-flex items-center space-x-3 px-6 py-4 rounded-xl text-lg font-semibold ${
+          vehicle.steuertrieb === 'Steuerkette' 
+            ? 'bg-green-100 text-green-800' 
+            : vehicle.steuertrieb === 'Zahnriemen'
+              ? 'bg-blue-100 text-blue-800'
+              : 'bg-yellow-100 text-yellow-800'
+        }`}>
+          <span class="text-2xl">
+            {vehicle.steuertrieb === 'Steuerkette' ? '⛓️' : vehicle.steuertrieb === 'Zahnriemen' ? '⚙️' : '⚡'}
+          </span>
+          <span>
+            {vehicle.steuertrieb === 'Beides' 
+              ? 'Steuerkette oder Zahnriemen (je nach Motor)'
+              : `${vehicle.steuertrieb}`
+            }
+          </span>
+        </div>
+        
+        <!-- Quick Info -->
+        <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+          <span class="inline-flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+            </svg>
+            Zuletzt aktualisiert: {vehicle.meta.letzteAktualisierung}
+          </span>
+          <span class="inline-flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            Beliebtheit: {vehicle.meta.beliebtheit}/10
+          </span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Motoren-Tabelle -->
+    {vehicle.motoren.length > 0 && (
+      <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Motor-Übersicht
+        </h2>
+        <MotorTable motoren={vehicle.motoren} />
+      </section>
+    )}
+    
+    <!-- Was ist der Unterschied? -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">
+        Steuerkette vs. Zahnriemen
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-4 bg-green-50 rounded-lg">
+          <h3 class="font-semibold text-green-800 mb-2">Steuerkette</h3>
+          <ul class="text-sm text-green-700 space-y-1">
+            <li>✓ Lebenslang haltbar (theoretisch)</li>
+            <li>✗ Kann bei Verschleiß teuer werden</li>
+            <li>✗ Kettengeräusch = Warnsignal</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-blue-50 rounded-lg">
+          <h3 class="font-semibold text-blue-800 mb-2">Zahnriemen</h3>
+          <ul class="text-sm text-blue-700 space-y-1">
+            <li>✓ Leiser, leichter</li>
+            <li>✗ Muss regelmäßig gewechselt werden</li>
+            <li>✗ Riss = Motorschaden</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ -->
+    <FAQSection faq={vehicle.faq} />
+    
+    <!-- Ankauf CTA -->
+    {SITE_CONFIG.ohauto.enabled && (
+      <AnkaufCTA 
+        modell={vehicle.modell}
+        marke={vehicle.marke}
+        motorschaden={vehicle.motoren.some(m => m.risikoPunkte && m.risikoPunkte.length > 0)}
+      />
+    )}
+    
+  </div>
+</BaseLayout>

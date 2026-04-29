@@ -1,0 +1,42 @@
+---
+// Suchseite mit Pagefind
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Suche – Fahrzeug finden';
+const description = 'Suche nach deinem Fahrzeug und finde sofort heraus: Steuerkette oder Zahnriemen?';
+---
+
+<BaseLayout {title} {description}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+      Fahrzeug suchen
+    </h1>
+    
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+      <div id="pagefind-search" class="w-full"></div>
+    </div>
+    
+    <div class="text-center text-gray-500">
+      <p>
+        Tipp: Suche nach Marke (z.B. "VW") oder Modell (z.B. "Golf")
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.PagefindUI) {
+      new PagefindUI({ 
+        element: "#pagefind-search",
+        translations: {
+          placeholder: "Marke oder Modell eingeben...",
+          zero_results: "Keine Ergebnisse für \"[SEARCH_TERM]\". Versuche es mit einer anderen Schreibweise.",
+          many_results: "[COUNT] Ergebnisse",
+          one_result: "1 Ergebnis",
+        }
+      });
+    }
+  });
+</script>

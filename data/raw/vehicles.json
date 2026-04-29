@@ -1,0 +1,794 @@
+[
+  {
+    "modell": "Fiat 500",
+    "marke": "Fiat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Fiat 500",
+        "url": "http://www.autosmotor.de/fiat-500-zahnriemen-oder-steuerkette-27536",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Fiat 500L",
+        "url": "http://www.autosmotor.de/fiat-500l-zahnriemen-oder-steuerkette-27544",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/fiat-zahnriemen-oder-steuerkette-27584"
+  },
+  {
+    "modell": "Fiat Doblo",
+    "marke": "Fiat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Fiat Doblò",
+        "url": "http://www.autosmotor.de/fiat-doblo-zahnriemen-oder-steuerkette-27568",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/fiat-zahnriemen-oder-steuerkette-27584"
+  },
+  {
+    "modell": "Fiat Ducato",
+    "marke": "Fiat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/fiat-zahnriemen-oder-steuerkette-27584"
+  },
+  {
+    "modell": "Fiat Punto",
+    "marke": "Fiat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Fiat Punto",
+        "url": "http://www.autosmotor.de/fiat-punto-zahnriemen-oder-steuerkette-27548",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/fiat-zahnriemen-oder-steuerkette-27584"
+  },
+  {
+    "modell": "Ford C-Max",
+    "marke": "Ford",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Ford C-MAX",
+        "url": "https://www.autosmotor.de/ford-c-max-zahnriemen-oder-steuerkette-40980",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/ford-zahnriemen-oder-steuerkette-41148"
+  },
+  {
+    "modell": "Ford Fiesta",
+    "marke": "Ford",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Ford Fiesta",
+        "url": "https://www.autosmotor.de/ford-fiesta-zahnriemen-oder-steuerkette-40657",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/ford-zahnriemen-oder-steuerkette-41148"
+  },
+  {
+    "modell": "Ford Focus",
+    "marke": "Ford",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Ford Focus",
+        "url": "https://www.autosmotor.de/ford-focus-zahnriemen-oder-steuerkette-40628",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/ford-zahnriemen-oder-steuerkette-41148"
+  },
+  {
+    "modell": "Ford S-Max",
+    "marke": "Ford",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Ford S-MAX",
+        "url": "https://www.autosmotor.de/ford-s-max-zahnriemen-oder-steuerkette-40987",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/ford-zahnriemen-oder-steuerkette-41148"
+  },
+  {
+    "modell": "Ford Transit",
+    "marke": "Ford",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/ford-zahnriemen-oder-steuerkette-41148"
+  },
+  {
+    "modell": "Mazda 3",
+    "marke": "Mazda",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Mazda3",
+        "url": "http://www.autosmotor.de/mazda3-zahnriemen-oder-steuerkette-27646",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mazda5",
+        "url": "http://www.autosmotor.de/mazda5-zahnriemen-oder-steuerkette-27723",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mazda CX-3",
+        "url": "http://www.autosmotor.de/mazda-cx-3-zahnriemen-oder-steuerkette-57435",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mazda CX-7",
+        "url": "http://www.autosmotor.de/mazda-cx-7-zahnriemen-oder-steuerkette-27736",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mazda MX-5",
+        "url": "http://www.autosmotor.de/mazda-mx-5-zahnriemen-oder-steuerkette-27732",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/mazda-zahnriemen-oder-steuerkette-27738"
+  },
+  {
+    "modell": "Mercedes A-Klasse",
+    "marke": "Mercedes",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Mercedes-Benz A-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-klasse-zahnriemen-oder-steuerkette-51681",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mercedes-Benz CLA-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-cla-klasse-alle-baureihen-zahnriemen-oder-steuerkette-67024",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mercedes-Benz GLA-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-x-156-gla-klasse-zahnriemen-oder-steuerkette-66926",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/mercedes-benz-motoren-zahnriemen-oder-steuerkette-66924"
+  },
+  {
+    "modell": "Mercedes B-Klasse",
+    "marke": "Mercedes",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Mercedes-Benz B-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-b-klasse-zahnriemen-oder-steuerkette-67116",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Mercedes-Benz GLB-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-x-247-glb-klasse-zahnriemen-oder-steuerkette-67009",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/mercedes-benz-motoren-zahnriemen-oder-steuerkette-66924"
+  },
+  {
+    "modell": "Mercedes C-Klasse",
+    "marke": "Mercedes",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Mercedes-Benz C-Klasse",
+        "url": "https://www.autosmotor.de/mercedes-benz-c-klasse-alle-baureihen-zahnriemen-oder-steuerkette-66867",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/mercedes-benz-motoren-zahnriemen-oder-steuerkette-66924"
+  },
+  {
+    "modell": "Mini Cooper Cabrio",
+    "marke": "Mini",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/bmw-motoren-zahnriemen-oder-steuerkette-66620"
+  },
+  {
+    "modell": "Mini Cooper Clubman",
+    "marke": "Mini",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/bmw-motoren-zahnriemen-oder-steuerkette-66620"
+  },
+  {
+    "modell": "Mini ONE",
+    "marke": "Mini",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/bmw-motoren-zahnriemen-oder-steuerkette-66620"
+  },
+  {
+    "modell": "Nissan Micra",
+    "marke": "Nissan",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Nissan Micra",
+        "url": "https://www.autosmotor.de/nissan-micra-zahnriemen-oder-steuerkette-27769",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/nissan-zahnriemen-oder-steuerkette-27856"
+  },
+  {
+    "modell": "Opel Adam",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Adam",
+        "url": "https://www.autosmotor.de/opel-adam-zahnriemen-oder-steuerkette-28172",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Antara",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Antara",
+        "url": "https://www.autosmotor.de/opel-antara-zahnriemen-oder-steuerkette-28160",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Astra",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Astra",
+        "url": "https://www.autosmotor.de/opel-astra-zahnriemen-oder-steuerkette-28064",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Corsa",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Corsa",
+        "url": "https://www.autosmotor.de/opel-corsa-zahnriemen-oder-steuerkette-27920",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Insignia",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Insignia",
+        "url": "https://www.autosmotor.de/opel-insignia-zahnriemen-oder-steuerkette-28076",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Meriva",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Meriva",
+        "url": "https://www.autosmotor.de/opel-meriva-zahnriemen-oder-steuerkette-28066",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Opel Zafira",
+    "marke": "Opel",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Opel Zafira/Zafira Tourer",
+        "url": "https://www.autosmotor.de/opel-zafira-zahnriemen-oder-steuerkette-28140",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/opel-zahnriemen-oder-steuerkette-28177"
+  },
+  {
+    "modell": "Peugeot 207",
+    "marke": "Peugeot",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Peugeot 207",
+        "url": "http://www.autosmotor.de/peugeot-207-zahnriemen-oder-steuerkette-28316",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/peugeot-zahnriemen-oder-steuerkette-28499"
+  },
+  {
+    "modell": "Peugeot 307",
+    "marke": "Peugeot",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Peugeot 307",
+        "url": "http://www.autosmotor.de/peugeot-307-zahnriemen-oder-steuerkette-28344",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/peugeot-zahnriemen-oder-steuerkette-28499"
+  },
+  {
+    "modell": "Renault Espace",
+    "marke": "Renault",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/renault-zahnriemen-oder-steuerkette-42099"
+  },
+  {
+    "modell": "Renault Megane",
+    "marke": "Renault",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Renault Megane",
+        "url": "http://www.autosmotor.de/renault-megane-zahnriemen-oder-steuerkette-41184",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/renault-zahnriemen-oder-steuerkette-42099"
+  },
+  {
+    "modell": "Renault Modus",
+    "marke": "Renault",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/renault-zahnriemen-oder-steuerkette-42099"
+  },
+  {
+    "modell": "Renault Scenic",
+    "marke": "Renault",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Renault Scenic",
+        "url": "http://www.autosmotor.de/renault-scenic-zahnriemen-oder-steuerkette-41200",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/renault-zahnriemen-oder-steuerkette-42099"
+  },
+  {
+    "modell": "Renault Twingo",
+    "marke": "Renault",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Renault Twingo",
+        "url": "http://www.autosmotor.de/renault-twingo-zahnriemen-oder-steuerkette-41180",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/renault-zahnriemen-oder-steuerkette-42099"
+  },
+  {
+    "modell": "Saab 9-3",
+    "marke": "Saab",
+    "steuertrieb": "Steuerkette",
+    "quelle": "Allgemeinwissen (GM Ecotec Motoren nutzen Steuerketten)",
+    "generationen": [],
+    "url": ""
+  },
+  {
+    "modell": "Seat Altea",
+    "marke": "Seat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Seat Altea",
+        "url": "https://www.autosmotor.de/seat-altea-zahnriemen-oder-steuerkette-50203",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/seat-motoren-zahnriemen-oder-steuerkette-50240"
+  },
+  {
+    "modell": "Seat Ibiza",
+    "marke": "Seat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Seat Ibiza",
+        "url": "https://www.autosmotor.de/seat-ibiza-zahnriemen-oder-steuerkette-42502",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/seat-motoren-zahnriemen-oder-steuerkette-50240"
+  },
+  {
+    "modell": "Seat Leon",
+    "marke": "Seat",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Seat Leon",
+        "url": "https://www.autosmotor.de/seat-leon-zahnriemen-oder-steuerkette-42475",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/seat-motoren-zahnriemen-oder-steuerkette-50240"
+  },
+  {
+    "modell": "Skoda Fabia",
+    "marke": "Skoda",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Skoda Fabia",
+        "url": "http://www.autosmotor.de/skoda-fabia-zahnriemen-oder-steuerkette-28202",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/skoda-zahnriemen-oder-steuerkette-28305"
+  },
+  {
+    "modell": "Skoda Octavia",
+    "marke": "Skoda",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Skoda Octavia",
+        "url": "http://www.autosmotor.de/skoda-octavia-zahnriemen-oder-steuerkette-28182",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/skoda-zahnriemen-oder-steuerkette-28305"
+  },
+  {
+    "modell": "Skoda Roomster",
+    "marke": "Skoda",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Skoda Roomster",
+        "url": "http://www.autosmotor.de/skoda-roomster-zahnriemen-oder-steuerkette-28254",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/skoda-zahnriemen-oder-steuerkette-28305"
+  },
+  {
+    "modell": "Smart ForFour",
+    "marke": "Smart",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "Allgemeinwissen (Renault-Motoren: Zahnriemen, Mitsubishi-Motoren: Steuerkette)",
+    "generationen": [],
+    "url": ""
+  },
+  {
+    "modell": "Smart ForTwo",
+    "marke": "Smart",
+    "steuertrieb": "Steuerkette",
+    "quelle": "Allgemeinwissen (alle Smart-Motoren nutzen Steuerketten)",
+    "generationen": [],
+    "url": ""
+  },
+  {
+    "modell": "Subaru Forester",
+    "marke": "Subaru",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Subaru Forester",
+        "url": "http://www.autosmotor.de/subaru-forester-zahnriemen-oder-steuerkette-51014",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/subaru-motoren-zahnriemen-oder-steuerkette-nockenwellenantrieb-51127"
+  },
+  {
+    "modell": "Suzuki Grand Vitara",
+    "marke": "Suzuki",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Suzuki Grand Vitara",
+        "url": "https://www.autosmotor.de/suzuki-grand-vitara-zahnriemen-oder-steuerkette-51115",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/suzuki-motoren-nockenwellenantrieb-zahnriemen-oder-steuerkette-62959"
+  },
+  {
+    "modell": "Toyota Avensis",
+    "marke": "Toyota",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Toyyota Avensis",
+        "url": "http://www.autosmotor.de/toyota-avensis-zahnriemen-oder-steuerkette-50298",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/toyota-motoren-zahnriemen-oder-steuerkette-nockenwellenantrieb-50391"
+  },
+  {
+    "modell": "Toyota Aygo",
+    "marke": "Toyota",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Toyota Aygo",
+        "url": "http://www.autosmotor.de/toyota-aygo-zahnriemen-oder-steuerkette-50371",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/toyota-motoren-zahnriemen-oder-steuerkette-nockenwellenantrieb-50391"
+  },
+  {
+    "modell": "Toyota Corolla",
+    "marke": "Toyota",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Toyota Corolla",
+        "url": "http://www.autosmotor.de/toyota-corolla-zahnriemen-oder-steuerkette-50381?preview=true",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "Toyota Corolla Verso",
+        "url": "http://www.autosmotor.de/toyota-corolla-verso-zahnriemen-oder-steuerkette-50379",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/toyota-motoren-zahnriemen-oder-steuerkette-nockenwellenantrieb-50391"
+  },
+  {
+    "modell": "Toyota Yaris",
+    "marke": "Toyota",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "Toyota Yaris",
+        "url": "http://www.autosmotor.de/toyota-yaris-zahnriemen-oder-steuerkette-50308",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/toyota-motoren-zahnriemen-oder-steuerkette-nockenwellenantrieb-50391"
+  },
+  {
+    "modell": "VW Beetle",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Beetle",
+        "url": "https://www.autosmotor.de/vw-beetle-zahnriemen-oder-steuerkette-50276",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Caddy",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Caddy",
+        "url": "https://www.autosmotor.de/vw-caddy-zahnriemen-oder-steuerkette-36917",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Fox",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Fox",
+        "url": "https://www.autosmotor.de/vw-fox-zahnriemen-oder-steuerkette-36794",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Golf",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Golf",
+        "url": "https://www.autosmotor.de/vw-golf-zahnriemen-oder-steuerkette-36967",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "VW Golf Sportsvan",
+        "url": "https://www.autosmotor.de/vw-golf-sportsvan-zahnriemen-oder-steuerkette-50268",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "VW Golf Plus",
+        "url": "https://www.autosmotor.de/vw-golf-plus-zahnriemen-oder-steuerkette-51318",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Lupo",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "generationen": [],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Passat",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW CC / Passat CC",
+        "url": "https://www.autosmotor.de/vw-cc-zahnriemen-oder-steuerkette-50274",
+        "steuertrieb": "Beides (je nach Motor)"
+      },
+      {
+        "name": "VW Passat",
+        "url": "https://www.autosmotor.de/vw-passat-zahnriemen-oder-steuerkette-36983",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Polo",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Polo",
+        "url": "https://www.autosmotor.de/vw-polo-zahnriemen-oder-steuerkette-36975",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Sharan",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Sharan",
+        "url": "https://www.autosmotor.de/vw-sharan-zahnriemen-oder-steuerkette-36798",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Tiguan",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Tiguan",
+        "url": "https://www.autosmotor.de/vw-tiguan-zahnriemen-oder-steuerkette-36796",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Touareg",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Touareg",
+        "url": "https://www.autosmotor.de/vw-touareg-zahnriemen-oder-steuerkette-36834",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  },
+  {
+    "modell": "VW Touran",
+    "marke": "VW",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "generationen": [
+      {
+        "name": "VW Touran",
+        "url": "https://www.autosmotor.de/vw-touran-zahnriemen-oder-steuerkette-36845",
+        "steuertrieb": "Beides (je nach Motor)"
+      }
+    ],
+    "url": "https://www.autosmotor.de/vw-zahnriemen-oder-steuerkette-36989"
+  }
+]

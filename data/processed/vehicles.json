@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "fiat-fiat-500-500",
+    "marke": "Fiat",
+    "modell": "Fiat 500",
+    "slug": "fiat-fiat-500-500",
+    "generation": "500",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Fiat Fiat 500 500 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Fiat Fiat 500 500 hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Fiat Fiat 500 500?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Fiat Fiat 500 500 liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "fiat-fiat-doblo-dobl",
+    "marke": "Fiat",
+    "modell": "Fiat Doblo",
+    "slug": "fiat-fiat-doblo-dobl",
+    "generation": "Doblò",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Fiat Fiat Doblo Doblò eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Fiat Fiat Doblo Doblò hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Fiat Fiat Doblo Doblò?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Fiat Fiat Doblo Doblò liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "fiat-fiat-ducato",
+    "marke": "Fiat",
+    "modell": "Fiat Ducato",
+    "slug": "fiat-fiat-ducato",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Fiat Fiat Ducato eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Fiat Fiat Ducato hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Fiat Fiat Ducato?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Fiat Fiat Ducato liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "fiat-fiat-punto-punto",
+    "marke": "Fiat",
+    "modell": "Fiat Punto",
+    "slug": "fiat-fiat-punto-punto",
+    "generation": "Punto",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Fiat Fiat Punto Punto eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Fiat Fiat Punto Punto hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Fiat Fiat Punto Punto?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Fiat Fiat Punto Punto liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 10,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "ford-ford-c-max-c-max",
+    "marke": "Ford",
+    "modell": "Ford C-Max",
+    "slug": "ford-ford-c-max-c-max",
+    "generation": "C-MAX",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Ford Ford C-Max C-MAX eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Ford Ford C-Max C-MAX hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Ford Ford C-Max C-MAX?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Ford Ford C-Max C-MAX liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 6,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "ford-ford-fiesta-fiesta",
+    "marke": "Ford",
+    "modell": "Ford Fiesta",
+    "slug": "ford-ford-fiesta-fiesta",
+    "generation": "Fiesta",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Ford Ford Fiesta Fiesta eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Ford Ford Fiesta Fiesta hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Ford Ford Fiesta Fiesta?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Ford Ford Fiesta Fiesta liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "ford-ford-focus-focus",
+    "marke": "Ford",
+    "modell": "Ford Focus",
+    "slug": "ford-ford-focus-focus",
+    "generation": "Focus",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Ford Ford Focus Focus eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Ford Ford Focus Focus hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Ford Ford Focus Focus?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Ford Ford Focus Focus liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 9,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "ford-ford-s-max-s-max",
+    "marke": "Ford",
+    "modell": "Ford S-Max",
+    "slug": "ford-ford-s-max-s-max",
+    "generation": "S-MAX",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Ford Ford S-Max S-MAX eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Ford Ford S-Max S-MAX hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Ford Ford S-Max S-MAX?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Ford Ford S-Max S-MAX liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "ford-ford-transit",
+    "marke": "Ford",
+    "modell": "Ford Transit",
+    "slug": "ford-ford-transit",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Ford Ford Transit eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Ford Ford Transit hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Ford Ford Transit?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Ford Ford Transit liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mazda-mazda-3-3",
+    "marke": "Mazda",
+    "modell": "Mazda 3",
+    "slug": "mazda-mazda-3-3",
+    "generation": "3",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mazda Mazda 3 3 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mazda Mazda 3 3 hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mazda Mazda 3 3?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mazda Mazda 3 3 liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mercedes-mercedes-a-klasse-benz-a-klasse",
+    "marke": "Mercedes",
+    "modell": "Mercedes A-Klasse",
+    "slug": "mercedes-mercedes-a-klasse-benz-a-klasse",
+    "generation": "-Benz A-Klasse",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mercedes Mercedes A-Klasse -Benz A-Klasse eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mercedes Mercedes A-Klasse -Benz A-Klasse hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mercedes Mercedes A-Klasse -Benz A-Klasse?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mercedes Mercedes A-Klasse -Benz A-Klasse liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mercedes-mercedes-b-klasse-benz-b-klasse",
+    "marke": "Mercedes",
+    "modell": "Mercedes B-Klasse",
+    "slug": "mercedes-mercedes-b-klasse-benz-b-klasse",
+    "generation": "-Benz B-Klasse",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mercedes Mercedes B-Klasse -Benz B-Klasse eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mercedes Mercedes B-Klasse -Benz B-Klasse hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mercedes Mercedes B-Klasse -Benz B-Klasse?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mercedes Mercedes B-Klasse -Benz B-Klasse liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mercedes-mercedes-c-klasse-benz-c-klasse",
+    "marke": "Mercedes",
+    "modell": "Mercedes C-Klasse",
+    "slug": "mercedes-mercedes-c-klasse-benz-c-klasse",
+    "generation": "-Benz C-Klasse",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mercedes Mercedes C-Klasse -Benz C-Klasse eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mercedes Mercedes C-Klasse -Benz C-Klasse hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mercedes Mercedes C-Klasse -Benz C-Klasse?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mercedes Mercedes C-Klasse -Benz C-Klasse liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mini-mini-cooper-cabrio",
+    "marke": "Mini",
+    "modell": "Mini Cooper Cabrio",
+    "slug": "mini-mini-cooper-cabrio",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mini Mini Cooper Cabrio eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mini Mini Cooper Cabrio hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mini Mini Cooper Cabrio?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mini Mini Cooper Cabrio liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mini-mini-cooper-clubman",
+    "marke": "Mini",
+    "modell": "Mini Cooper Clubman",
+    "slug": "mini-mini-cooper-clubman",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mini Mini Cooper Clubman eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mini Mini Cooper Clubman hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mini Mini Cooper Clubman?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mini Mini Cooper Clubman liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "mini-mini-one",
+    "marke": "Mini",
+    "modell": "Mini ONE",
+    "slug": "mini-mini-one",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Mini Mini ONE eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Mini Mini ONE hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Mini Mini ONE?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Mini Mini ONE liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 5,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "nissan-nissan-micra-micra",
+    "marke": "Nissan",
+    "modell": "Nissan Micra",
+    "slug": "nissan-nissan-micra-micra",
+    "generation": "Micra",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Nissan Nissan Micra Micra eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Nissan Nissan Micra Micra hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Nissan Nissan Micra Micra?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Nissan Nissan Micra Micra liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 8,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-adam-adam",
+    "marke": "Opel",
+    "modell": "Opel Adam",
+    "slug": "opel-opel-adam-adam",
+    "generation": "Adam",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Adam Adam eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Adam Adam hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Adam Adam?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Adam Adam liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-antara-antara",
+    "marke": "Opel",
+    "modell": "Opel Antara",
+    "slug": "opel-opel-antara-antara",
+    "generation": "Antara",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Antara Antara eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Antara Antara hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Antara Antara?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Antara Antara liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 2,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-astra-astra",
+    "marke": "Opel",
+    "modell": "Opel Astra",
+    "slug": "opel-opel-astra-astra",
+    "generation": "Astra",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Astra Astra eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Astra Astra hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Astra Astra?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Astra Astra liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-corsa-corsa",
+    "marke": "Opel",
+    "modell": "Opel Corsa",
+    "slug": "opel-opel-corsa-corsa",
+    "generation": "Corsa",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Corsa Corsa eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Corsa Corsa hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Corsa Corsa?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Corsa Corsa liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-insignia-insignia",
+    "marke": "Opel",
+    "modell": "Opel Insignia",
+    "slug": "opel-opel-insignia-insignia",
+    "generation": "Insignia",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Insignia Insignia eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Insignia Insignia hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Insignia Insignia?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Insignia Insignia liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 6,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-meriva-meriva",
+    "marke": "Opel",
+    "modell": "Opel Meriva",
+    "slug": "opel-opel-meriva-meriva",
+    "generation": "Meriva",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Meriva Meriva eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Meriva Meriva hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Meriva Meriva?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Meriva Meriva liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 10,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "opel-opel-zafira-zafira-zafira-tourer",
+    "marke": "Opel",
+    "modell": "Opel Zafira",
+    "slug": "opel-opel-zafira-zafira-zafira-tourer",
+    "generation": "Zafira/Zafira Tourer",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Opel Opel Zafira Zafira/Zafira Tourer eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Opel Opel Zafira Zafira/Zafira Tourer hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Opel Opel Zafira Zafira/Zafira Tourer?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Opel Opel Zafira Zafira/Zafira Tourer liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 8,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "peugeot-peugeot-207-207",
+    "marke": "Peugeot",
+    "modell": "Peugeot 207",
+    "slug": "peugeot-peugeot-207-207",
+    "generation": "207",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Peugeot Peugeot 207 207 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Peugeot Peugeot 207 207 hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Peugeot Peugeot 207 207?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Peugeot Peugeot 207 207 liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "peugeot-peugeot-307-307",
+    "marke": "Peugeot",
+    "modell": "Peugeot 307",
+    "slug": "peugeot-peugeot-307-307",
+    "generation": "307",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Peugeot Peugeot 307 307 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Peugeot Peugeot 307 307 hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Peugeot Peugeot 307 307?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Peugeot Peugeot 307 307 liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 5,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "renault-renault-espace",
+    "marke": "Renault",
+    "modell": "Renault Espace",
+    "slug": "renault-renault-espace",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Renault Renault Espace eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Renault Espace hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Renault Renault Espace?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Renault Renault Espace liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 9,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "renault-renault-megane-megane",
+    "marke": "Renault",
+    "modell": "Renault Megane",
+    "slug": "renault-renault-megane-megane",
+    "generation": "Megane",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Renault Renault Megane Megane eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Renault Megane Megane hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Renault Renault Megane Megane?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Renault Renault Megane Megane liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "renault-renault-modus",
+    "marke": "Renault",
+    "modell": "Renault Modus",
+    "slug": "renault-renault-modus",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Renault Renault Modus eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Renault Modus hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Renault Renault Modus?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Renault Renault Modus liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 9,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "renault-renault-scenic-scenic",
+    "marke": "Renault",
+    "modell": "Renault Scenic",
+    "slug": "renault-renault-scenic-scenic",
+    "generation": "Scenic",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Renault Renault Scenic Scenic eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Renault Scenic Scenic hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Renault Renault Scenic Scenic?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Renault Renault Scenic Scenic liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 8,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "renault-renault-twingo-twingo",
+    "marke": "Renault",
+    "modell": "Renault Twingo",
+    "slug": "renault-renault-twingo-twingo",
+    "generation": "Twingo",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Renault Renault Twingo Twingo eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Renault Twingo Twingo hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Renault Renault Twingo Twingo?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Renault Renault Twingo Twingo liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "saab-saab-9-3",
+    "marke": "Saab",
+    "modell": "Saab 9-3",
+    "slug": "saab-saab-9-3",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Steuerkette",
+    "quelle": "Allgemeinwissen (GM Ecotec Motoren nutzen Steuerketten)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Saab Saab 9-3 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Saab Saab 9-3 hat eine Steuerkette.",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Saab Saab 9-3?",
+        "antwort": "Die Kosten für einen Steuerkette-Wechsel beim Saab Saab 9-3 liegen je nach Motor und Region zwischen 600€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Mittel",
+      "beliebtheit": 5,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "seat-seat-altea-altea",
+    "marke": "Seat",
+    "modell": "Seat Altea",
+    "slug": "seat-seat-altea-altea",
+    "generation": "Altea",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Seat Seat Altea Altea eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Seat Seat Altea Altea hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Seat Seat Altea Altea?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Seat Seat Altea Altea liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 2,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "seat-seat-ibiza-ibiza",
+    "marke": "Seat",
+    "modell": "Seat Ibiza",
+    "slug": "seat-seat-ibiza-ibiza",
+    "generation": "Ibiza",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Seat Seat Ibiza Ibiza eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Seat Seat Ibiza Ibiza hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Seat Seat Ibiza Ibiza?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Seat Seat Ibiza Ibiza liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "seat-seat-leon-leon",
+    "marke": "Seat",
+    "modell": "Seat Leon",
+    "slug": "seat-seat-leon-leon",
+    "generation": "Leon",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Seat Seat Leon Leon eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Seat Seat Leon Leon hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Seat Seat Leon Leon?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Seat Seat Leon Leon liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 6,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "skoda-skoda-fabia-fabia",
+    "marke": "Skoda",
+    "modell": "Skoda Fabia",
+    "slug": "skoda-skoda-fabia-fabia",
+    "generation": "Fabia",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Skoda Skoda Fabia Fabia eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Skoda Skoda Fabia Fabia hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Skoda Skoda Fabia Fabia?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Skoda Skoda Fabia Fabia liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "skoda-skoda-octavia-octavia",
+    "marke": "Skoda",
+    "modell": "Skoda Octavia",
+    "slug": "skoda-skoda-octavia-octavia",
+    "generation": "Octavia",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Skoda Skoda Octavia Octavia eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Skoda Skoda Octavia Octavia hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Skoda Skoda Octavia Octavia?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Skoda Skoda Octavia Octavia liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "skoda-skoda-roomster-roomster",
+    "marke": "Skoda",
+    "modell": "Skoda Roomster",
+    "slug": "skoda-skoda-roomster-roomster",
+    "generation": "Roomster",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Skoda Skoda Roomster Roomster eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Skoda Skoda Roomster Roomster hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Skoda Skoda Roomster Roomster?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Skoda Skoda Roomster Roomster liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "smart-smart-forfour",
+    "marke": "Smart",
+    "modell": "Smart ForFour",
+    "slug": "smart-smart-forfour",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "Allgemeinwissen (Renault-Motoren: Zahnriemen, Mitsubishi-Motoren: Steuerkette)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Smart Smart ForFour eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Smart Smart ForFour hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Smart Smart ForFour?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Smart Smart ForFour liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "smart-smart-fortwo",
+    "marke": "Smart",
+    "modell": "Smart ForTwo",
+    "slug": "smart-smart-fortwo",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Steuerkette",
+    "quelle": "Allgemeinwissen (alle Smart-Motoren nutzen Steuerketten)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Smart Smart ForTwo eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Smart Smart ForTwo hat eine Steuerkette.",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Smart Smart ForTwo?",
+        "antwort": "Die Kosten für einen Steuerkette-Wechsel beim Smart Smart ForTwo liegen je nach Motor und Region zwischen 600€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Mittel",
+      "beliebtheit": 6,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "subaru-subaru-forester-forester",
+    "marke": "Subaru",
+    "modell": "Subaru Forester",
+    "slug": "subaru-subaru-forester-forester",
+    "generation": "Forester",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Subaru Subaru Forester Forester eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Subaru Subaru Forester Forester hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Subaru Subaru Forester Forester?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Subaru Subaru Forester Forester liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 6,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "suzuki-suzuki-grand-vitara-grand-vitara",
+    "marke": "Suzuki",
+    "modell": "Suzuki Grand Vitara",
+    "slug": "suzuki-suzuki-grand-vitara-grand-vitara",
+    "generation": "Grand Vitara",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Suzuki Suzuki Grand Vitara Grand Vitara eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Suzuki Suzuki Grand Vitara Grand Vitara hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Suzuki Suzuki Grand Vitara Grand Vitara?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Suzuki Suzuki Grand Vitara Grand Vitara liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "toyota-toyota-avensis-toyyota-avensis",
+    "marke": "Toyota",
+    "modell": "Toyota Avensis",
+    "slug": "toyota-toyota-avensis-toyyota-avensis",
+    "generation": "Toyyota Avensis",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Toyota Toyota Avensis Toyyota Avensis eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Toyota Toyota Avensis Toyyota Avensis hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Toyota Toyota Avensis Toyyota Avensis?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Toyota Toyota Avensis Toyyota Avensis liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "toyota-toyota-aygo-aygo",
+    "marke": "Toyota",
+    "modell": "Toyota Aygo",
+    "slug": "toyota-toyota-aygo-aygo",
+    "generation": "Aygo",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Toyota Toyota Aygo Aygo eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Toyota Toyota Aygo Aygo hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Toyota Toyota Aygo Aygo?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Toyota Toyota Aygo Aygo liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "toyota-toyota-corolla-corolla",
+    "marke": "Toyota",
+    "modell": "Toyota Corolla",
+    "slug": "toyota-toyota-corolla-corolla",
+    "generation": "Corolla",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Toyota Toyota Corolla Corolla eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Toyota Toyota Corolla Corolla hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Toyota Toyota Corolla Corolla?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Toyota Toyota Corolla Corolla liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 5,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "toyota-toyota-yaris-yaris",
+    "marke": "Toyota",
+    "modell": "Toyota Yaris",
+    "slug": "toyota-toyota-yaris-yaris",
+    "generation": "Yaris",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der Toyota Toyota Yaris Yaris eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Toyota Toyota Yaris Yaris hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim Toyota Toyota Yaris Yaris?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim Toyota Toyota Yaris Yaris liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 7,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-beetle-beetle",
+    "marke": "VW",
+    "modell": "VW Beetle",
+    "slug": "vw-vw-beetle-beetle",
+    "generation": "Beetle",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Beetle Beetle eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Beetle Beetle hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Beetle Beetle?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Beetle Beetle liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 8,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-caddy-caddy",
+    "marke": "VW",
+    "modell": "VW Caddy",
+    "slug": "vw-vw-caddy-caddy",
+    "generation": "Caddy",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Caddy Caddy eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Caddy Caddy hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Caddy Caddy?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Caddy Caddy liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-fox-fox",
+    "marke": "VW",
+    "modell": "VW Fox",
+    "slug": "vw-vw-fox-fox",
+    "generation": "Fox",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Fox Fox eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Fox Fox hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Fox Fox?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Fox Fox liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-golf-golf",
+    "marke": "VW",
+    "modell": "VW Golf",
+    "slug": "vw-vw-golf-golf",
+    "generation": "Golf",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Golf Golf eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Golf Golf hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Golf Golf?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Golf Golf liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-lupo",
+    "marke": "VW",
+    "modell": "VW Lupo",
+    "slug": "vw-vw-lupo",
+    "generation": "",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de (Marken-Übersicht)",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Lupo eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Lupo hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Lupo?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Lupo liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 8,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-passat-cc-passat-cc",
+    "marke": "VW",
+    "modell": "VW Passat",
+    "slug": "vw-vw-passat-cc-passat-cc",
+    "generation": "CC / Passat CC",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Passat CC / Passat CC eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Passat CC / Passat CC hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Passat CC / Passat CC?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Passat CC / Passat CC liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-polo-polo",
+    "marke": "VW",
+    "modell": "VW Polo",
+    "slug": "vw-vw-polo-polo",
+    "generation": "Polo",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Polo Polo eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Polo Polo hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Polo Polo?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Polo Polo liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 4,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-sharan-sharan",
+    "marke": "VW",
+    "modell": "VW Sharan",
+    "slug": "vw-vw-sharan-sharan",
+    "generation": "Sharan",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Sharan Sharan eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Sharan Sharan hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Sharan Sharan?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Sharan Sharan liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 1,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-tiguan-tiguan",
+    "marke": "VW",
+    "modell": "VW Tiguan",
+    "slug": "vw-vw-tiguan-tiguan",
+    "generation": "Tiguan",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Tiguan Tiguan eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Tiguan Tiguan hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Tiguan Tiguan?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Tiguan Tiguan liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 9,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-touareg-touareg",
+    "marke": "VW",
+    "modell": "VW Touareg",
+    "slug": "vw-vw-touareg-touareg",
+    "generation": "Touareg",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Touareg Touareg eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Touareg Touareg hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Touareg Touareg?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Touareg Touareg liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 10,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  },
+  {
+    "id": "vw-vw-touran-touran",
+    "marke": "VW",
+    "modell": "VW Touran",
+    "slug": "vw-vw-touran-touran",
+    "generation": "Touran",
+    "baujahre": null,
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [],
+    "faq": [
+      {
+        "frage": "Hat der VW VW Touran Touran eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der VW VW Touran Touran hat eine Beides (je nach Motor).",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Was kostet der Wechsel beim VW VW Touran Touran?",
+        "antwort": "Die Kosten für einen Beides (je nach Motor)-Wechsel beim VW VW Touran Touran liegen je nach Motor und Region zwischen 400€ und 1500€.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "risikoBewertung": "Gering",
+      "beliebtheit": 3,
+      "letzteAktualisierung": "2026-04-29"
+    }
+  }
+]

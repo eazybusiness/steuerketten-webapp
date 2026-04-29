@@ -1,0 +1,19 @@
+---
+// Modell-Detailseite — Steuerkette/Zahnriemen für ein spezifisches Modell
+import VehicleLayout from '../../../layouts/VehicleLayout.astro';
+import vehicles from '../../../../data/processed/vehicles.json';
+
+export async function getStaticPaths() {
+  return vehicles.map(vehicle => ({
+    params: { 
+      marke: vehicle.marke.toLowerCase(),
+      modell: vehicle.slug,
+    },
+    props: { vehicle },
+  }));
+}
+
+const { vehicle } = Astro.props;
+---
+
+<VehicleLayout {vehicle} />

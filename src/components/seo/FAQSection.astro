@@ -1,0 +1,69 @@
+---
+// FAQSection.astro — FAQ mit Schema.org Markup
+
+export interface Props {
+  faq: Array<{
+    frage: string;
+    antwort: string;
+    schemaType: string;
+  }>;
+}
+
+const { faq } = Astro.props;
+---
+
+<section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+  <h2 class="text-2xl font-bold text-gray-900 mb-6">
+    Häufig gestellte Fragen
+  </h2>
+  
+  <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+    {faq.map((item, index) => (
+      <div 
+        class="border border-gray-200 rounded-lg overflow-hidden"
+        itemscope 
+        itemprop="mainEntity" 
+        itemtype="https://schema.org/Question"
+      >
+        <button 
+          class="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors text-left"
+          onclick={`document.getElementById('faq-${index}').classList.toggle('hidden')`}
+        >
+          <span class="font-semibold text-gray-900" itemprop="name">
+            {item.frage}
+          </span>
+          <svg 
+            class="w-5 h-5 text-gray-500 flex-shrink-0 ml-4" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        
+        <div 
+          id={`faq-${index}`}
+          class="hidden p-4 bg-white border-t border-gray-200"
+          itemscope 
+          itemprop="acceptedAnswer" 
+          itemtype="https://schema.org/Answer"
+        >
+          <div class="text-gray-700 leading-relaxed" itemprop="text">
+            {item.antwort}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<script>
+  // First FAQ is open by default
+  document.addEventListener('DOMContentLoaded', () => {
+    const firstFaq = document.getElementById('faq-0');
+    if (firstFaq) {
+      firstFaq.classList.remove('hidden');
+    }
+  });
+</script>

@@ -1,0 +1,101 @@
+---
+// Alle Marken Übersicht
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import vehicles from '../../../data/processed/vehicles.json';
+
+const title = 'Alle Automarken – Steuerkette oder Zahnriemen?';
+const description = 'Übersicht aller Automarken. Finde heraus, welche Modelle Steuerkette oder Zahnriemen haben. Von Audi bis VW.';
+
+// Marken mit Anzahl
+const markenStats = [...new Set(vehicles.map(v => v.marke))]
+  .map(marke => ({
+    name: marke,
+    count: vehicles.filter(v => v.marke === marke).length,
+    steuerkette: vehicles.filter(v => v.marke === marke && v.steuertrieb === 'Steuerkette').length,
+    zahnriemen: vehicles.filter(v => v.marke === marke && v.steuertrieb === 'Zahnriemen').length,
+  }))
+  .sort((a, b) => b.count - a.count);
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+// Gruppieren nach Anfangsbuchstabe
+const grouped = {};
+alphabet.forEach(letter => {
+  const marken = markenStats.filter(m => m.name.toUpperCase().startsWith(letter));
+  if (marken.length > 0) {
+    grouped[letter] = marken;
+  }
+});
+---
+
+<BaseLayout {title} {description}>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Alle Automarken
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Übersicht von A bis Z: Welche Marken verwenden Steuerkette, welche Zahnriemen?
+      </p>
+    </header>
+    
+    <!-- Alphabet Navigation -->
+    <nav class="flex flex-wrap justify-center gap-2 mb-12">
+      {alphabet.map(letter => (
+        grouped[letter] ? (
+          <a 
+            href={`#${letter}`}
+            class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700"
+          >
+            {letter}
+          </a>
+        ) : (
+          <span class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-400 rounded-lg font-medium">
+            {letter}
+          </span>
+        )
+      ))}
+    </nav>
+    
+    <!-- Marken nach Alphabet -->
+    <div class="space-y-12">
+      {Object.entries(grouped).map(([letter, marken]) => (
+        <section id={letter}>
+          <h2 class="text-3xl font-bold text-gray-400 mb-6 border-b border-gray-200 pb-2">
+            {letter}
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {marken.map(marke => (
+              <a 
+                href={`/marke/${marke.name.toLowerCase()}/`}
+                class="flex items-center justify-between bg-white rounded-lg px-6 py-4 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+              >
+                <div>
+                  <span class="text-lg font-semibold text-gray-900">{marke.name}</span>
+                  <div class="flex gap-2 mt-1 text-xs">
+                    {marke.steuerkette > 0 && (
+                      <span class="text-green-600">
+                        {marke.steuerkette}× ⛓️
+                      </span>
+                    )}
+                    {marke.zahnriemen > 0 && (
+                      <span class="text-blue-600">
+                        {marke.zahnriemen}× ⚙️
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <span class="text-lg font-bold text-gray-400 bg-gray-100 px-3 py-1 rounded">
+                  {marke.count}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

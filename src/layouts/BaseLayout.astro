@@ -1,0 +1,193 @@
+---
+// BaseLayout.astro — Grundgerüst für alle Seiten
+import { SEO } from 'astro-seo';
+import { SITE_CONFIG } from '../content/config.ts';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+  schema?: object;
+}
+
+const { 
+  title, 
+  description = SITE_CONFIG.description,
+  ogImage = SITE_CONFIG.defaultOgImage,
+  canonical,
+  noindex = false,
+  schema,
+} = Astro.props;
+
+const fullTitle = title.includes(SITE_CONFIG.name) 
+  ? title 
+  : SITE_CONFIG.titleTemplate.replace('%s', title);
+
+const siteUrl = SITE_CONFIG.url;
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+---
+
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <!-- SEO -->
+  <SEO
+    title={fullTitle}
+    description={description}
+    canonical={canonicalUrl}
+    noindex={noindex}
+    openGraph={{
+      basic: {
+        title: fullTitle,
+        type: 'website',
+        image: ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`,
+        url: canonicalUrl,
+      },
+      optional: {
+        description,
+        siteName: SITE_CONFIG.name,
+        locale: 'de_DE',
+      },
+    }}
+    twitter={{
+      card: 'summary_large_image',
+      site: SITE_CONFIG.twitterHandle,
+      title: fullTitle,
+      description,
+      image: ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`,
+    }}
+  />
+  
+  <!-- Schema.org JSON-LD -->
+  {schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  )}
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Pagefind (for search) -->
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-blue-600">Steuerkette-Check</span>
+        </a>
+        
+        <!-- Nav -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="/marke/" class="text-gray-700 hover:text-blue-600 font-medium">
+            Alle Marken
+          </a>
+          <a href="/suche/" class="text-gray-700 hover:text-blue-600 font-medium">
+            Suche
+          </a>
+        </nav>
+        
+        <!-- Search Button (Mobile) -->
+        <button 
+          id="search-toggle" 
+          class="md:hidden p-2 text-gray-600 hover:text-blue-600"
+          aria-label="Suche öffnen"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Search -->
+    <div id="mobile-search" class="hidden md:hidden border-t border-gray-200 px-4 py-3 bg-gray-50">
+      <div id="pagefind-mobile" class="w-full"></div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <slot />
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">{SITE_CONFIG.name}</h3>
+          <p class="text-gray-400 text-sm">
+            Finde sofort heraus, ob dein Auto Steuerkette oder Zahnriemen hat.
+            Mit Wechselkosten, Risiko-Analyse und Experten-Tipps.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Beliebte Marken</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/marke/vw/" class="text-gray-400 hover:text-white">VW</a></li>
+            <li><a href="/marke/opel/" class="text-gray-400 hover:text-white">Opel</a></li>
+            <li><a href="/marke/ford/" class="text-gray-400 hover:text-white">Ford</a></li>
+            <li><a href="/marke/audi/" class="text-gray-400 hover:text-white">Audi</a></li>
+            <li><a href="/marke/bmw/" class="text-gray-400 hover:text-white">BMW</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Partner</h3>
+          {SITE_CONFIG.ohauto.enabled && (
+            <a 
+              href={SITE_CONFIG.ohauto.url}
+              class="inline-flex items-center text-gray-400 hover:text-white text-sm"
+              target="_blank"
+              rel="noopener"
+            >
+              Auto verkaufen? → ohAuto.de
+            </a>
+          )}
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} {SITE_CONFIG.name} — Alle Angaben ohne Gewähr
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Pagefind Script -->
+  <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    // Initialize search on desktop
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchToggle = document.getElementById('search-toggle');
+      const mobileSearch = document.getElementById('mobile-search');
+      
+      if (searchToggle && mobileSearch) {
+        searchToggle.addEventListener('click', () => {
+          mobileSearch.classList.toggle('hidden');
+          if (!mobileSearch.classList.contains('hidden')) {
+            new PagefindUI({ 
+              element: "#pagefind-mobile",
+              translations: {
+                placeholder: "Fahrzeug suchen...",
+                zero_results: "Keine Ergebnisse für \"[SEARCH_TERM]\"",
+              }
+            });
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

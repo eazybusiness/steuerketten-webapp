@@ -1,0 +1,101 @@
+---
+// MotorTable.astro — Tabelle mit Motorvarianten
+
+export interface Props {
+  motoren: Array<{
+    code: string;
+    bezeichnung: string;
+    hubraum: number;
+    ps: number;
+    kw: number;
+    kraftstoff: string;
+    steuertrieb: string;
+    wechselKostenMin?: number;
+    wechselKostenMax?: number;
+    risikoPunkte?: string[];
+    risikoLevel?: string;
+  }>;
+}
+
+const { motoren } = Astro.props;
+
+function formatKosten(min?: number, max?: number): string {
+  if (!min || !max) return 'n/a';
+  return `${min.toLocaleString('de-DE')}–${max.toLocaleString('de-DE')} €`;
+}
+
+function getRisikoBadge(level?: string) {
+  switch (level) {
+    case 'hoch':
+      return { class: 'bg-red-100 text-red-800', text: 'Hoch' };
+    case 'mittel':
+      return { class: 'bg-yellow-100 text-yellow-800', text: 'Mittel' };
+    default:
+      return { class: 'bg-green-100 text-green-800', text: 'Gering' };
+  }
+}
+---
+
+<div class="overflow-x-auto">
+  <table class="w-full text-left">
+    <thead class="bg-gray-50 border-b border-gray-200">
+      <tr>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Motor</th>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Hubraum</th>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Leistung</th>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Steuertrieb</th>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Wechselkosten</th>
+        <th class="px-4 py-3 text-sm font-semibold text-gray-900">Risiko</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      {motoren.map((motor, index) => {
+        const risiko = getRisikoBadge(motor.risikoLevel);
+        return (
+          <tr class={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+            <td class="px-4 py-3">
+              <div class="font-medium text-gray-900">{motor.bezeichnung}</div>
+              <div class="text-sm text-gray-500">{motor.code}</div>
+            </td>
+            <td class="px-4 py-3 text-sm text-gray-700">
+              {motor.hubraum ? `${(motor.hubraum / 1000).toFixed(1)} L` : '–'}
+            </td>
+            <td class="px-4 py-3 text-sm text-gray-700">
+              {motor.ps ? `${motor.ps} PS` : '–'}
+              {motor.kw && <span class="text-gray-500"> ({motor.kw} kW)</span>}
+            </td>
+            <td class="px-4 py-3">
+              <span class={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                motor.steuertrieb === 'Steuerkette' 
+                  ? 'bg-green-100 text-green-800' 
+                  : 'bg-blue-100 text-blue-800'
+              }`}>
+                {motor.steuertrieb === 'Steuerkette' ? '⛓️' : '⚙️'}
+                <span class="ml-1">{motor.steuertrieb}</span>
+              </span>
+            </td>
+            <td class="px-4 py-3 text-sm text-gray-700">
+              {formatKosten(motor.wechselKostenMin, motor.wechselKostenMax)}
+            </td>
+            <td class="px-4 py-3">
+              <span class={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${risiko.class}`}>
+                {risiko.text}
+              </span>
+              {motor.risikoPunkte && motor.risikoPunkte.length > 0 && (
+                <div class="mt-1 text-xs text-gray-500 max-w-[200px]">
+                  {motor.risikoPunkte[0]}
+                  {motor.risikoPunkte.length > 1 && ` +${motor.risikoPunkte.length - 1} weitere`}
+                </div>
+              )}
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
+
+<p class="mt-4 text-sm text-gray-500 italic">
+  * Wechselkosten sind Schätzungen und variieren je nach Region und Werkstatt.
+  Aktuelle Preise bei deiner Werkstatt erfragen.
+</p>

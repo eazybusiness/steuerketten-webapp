@@ -1,0 +1,55 @@
+---
+// Breadcrumbs.astro — Breadcrumb-Navigation mit Schema.org
+
+export interface Props {
+  items: Array<{
+    name: string;
+    url: string;
+  }>;
+}
+
+const { items } = Astro.props;
+
+// Schema.org BreadcrumbList
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.name,
+    "item": item.url,
+  })),
+};
+
+const currentPage = items[items.length - 1];
+const parentPages = items.slice(0, -1);
+---
+
+<nav aria-label="Breadcrumb" class="mb-6">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  
+  <ol class="flex flex-wrap items-center space-x-2 text-sm text-gray-500">
+    {parentPages.map((item) => (
+      <li class="flex items-center">
+        <a 
+          href={item.url}
+          class="hover:text-blue-600 transition-colors"
+        >
+          {item.name}
+        </a>
+        <svg 
+          class="w-4 h-4 mx-2 text-gray-400" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </li>
+    ))}
+    <li class="text-gray-900 font-medium" aria-current="page">
+      {currentPage.name}
+    </li>
+  </ol>
+</nav>

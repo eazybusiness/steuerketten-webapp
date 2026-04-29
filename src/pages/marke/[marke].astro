@@ -1,0 +1,191 @@
+---
+// Marken-Seite — Alle Modelle einer Marke
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import VehicleLayout from '../../layouts/VehicleLayout.astro';
+import vehicles from '../../../data/processed/vehicles.json';
+
+export async function getStaticPaths() {
+  // Alle eindeutigen Marken
+  const marken = [...new Set(vehicles.map(v => v.marke))];
+  
+  return marken.map(marke => ({
+    params: { marke: marke.toLowerCase() },
+    props: { 
+      marke,
+      vehicles: vehicles.filter(v => v.marke === marke)
+    },
+  }));
+}
+
+const { marke, vehicles } = Astro.props;
+
+const title = `${marke} – Steuerkette oder Zahnriemen? Alle Modelle`;
+const description = `Welche ${marke}-Modelle haben Steuerkette, welche Zahnriemen? Übersicht aller ${vehicles.length} Modelle mit Baujahren, Motorvarianten und Wechselkosten.`;
+
+// Statistik für diese Marke
+const stats = {
+  steuerkette: vehicles.filter(v => v.steuertrieb === 'Steuerkette').length,
+  zahnriemen: vehicles.filter(v => v.steuertrieb === 'Zahnriemen').length,
+  beides: vehicles.filter(v => v.steuertrieb === 'Beides').length,
+};
+
+// Schema.org
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": title,
+  "description": description,
+  "url": Astro.url.toString(),
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": vehicles.map((v, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${Astro.url.origin}/marke/${marke.toLowerCase()}/${v.slug}/`,
+      "name": `${v.marke} ${v.modell} ${v.generation || ''}`
+    }))
+  }
+};
+---
+
+<BaseLayout {title} {description} {schema}>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <a href="/" class="text-gray-500 hover:text-blue-600">Start</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <a href="/marke/" class="text-gray-500 hover:text-blue-600">Marken</a>
+      <span class="text-gray-400 mx-2">/</span>
+      <span class="text-gray-900 font-medium">{marke}</span>
+    </nav>
+    
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        {marke}
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Alle {marke}-Modelle: Steuerkette oder Zahnriemen? 
+        Finde sofort die Antwort für dein Fahrzeug.
+      </p>
+      
+      <!-- Stats -->
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        {stats.steuerkette > 0 && (
+          <span class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full">
+            <span class="text-lg mr-2">⛓️</span>
+            {stats.steuerkette} mit Steuerkette
+          </span>
+        )}
+        {stats.zahnriemen > 0 && (
+          <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
+            <span class="text-lg mr-2">⚙️</span>
+            {stats.zahnriemen} mit Zahnriemen
+          </span>
+        )}
+        {stats.beides > 0 && (
+          <span class="inline-flex items-center px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">
+            <span class="text-lg mr-2">⚡</span>
+            {stats.beides} je nach Motor
+          </span>
+        )}
+      </div>
+    </header>
+    
+    <!-- Modelle Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {vehicles.map(vehicle => (
+        <a 
+          href={`/marke/${marke.toLowerCase()}/${vehicle.slug}/`}
+          class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all p-6 border border-gray-100"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">
+                {vehicle.modell}
+                {vehicle.generation && (
+                  <span class="text-gray-500 font-normal ml-1">
+                    {vehicle.generation}
+                  </span>
+                )}
+              </h2>
+              {vehicle.baujahre && (
+                <p class="text-sm text-gray-500 mt-1">
+                  {vehicle.baujahre.von}–{vehicle.baujahre.bis}
+                </p>
+              )}
+            </div>
+            <span class={`text-3xl ${
+              vehicle.steuertrieb === 'Steuerkette' 
+                ? 'text-green-500' 
+                : vehicle.steuertrieb === 'Zahnriemen'
+                  ? 'text-blue-500'
+                  : 'text-yellow-500'
+            }`}>
+              {vehicle.steuertrieb === 'Steuerkette' ? '⛓️' : vehicle.steuertrieb === 'Zahnriemen' ? '⚙️' : '⚡'}
+            </span>
+          </div>
+          
+          <div class={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
+            vehicle.steuertrieb === 'Steuerkette' 
+              ? 'bg-green-100 text-green-800' 
+              : vehicle.steuertrieb === 'Zahnriemen'
+                ? 'bg-blue-100 text-blue-800'
+                : 'bg-yellow-100 text-yellow-800'
+          }`}>
+            {vehicle.steuertrieb}
+          </div>
+          
+          <div class="mt-4 text-sm text-gray-500">
+            {vehicle.motoren.length} Motorvarianten
+          </div>
+        </a>
+      ))}
+    </div>
+    
+    <!-- FAQ für Marke -->
+    <section class="mt-16 bg-white rounded-2xl shadow-sm p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">
+        Häufige Fragen zu {marke}
+      </h2>
+      
+      <div class="space-y-4">
+        <details class="border border-gray-200 rounded-lg">
+          <summary class="p-4 font-medium text-gray-900 cursor-pointer hover:bg-gray-50">
+            Welche {marke}-Modelle haben Steuerkette?
+          </summary>
+          <div class="p-4 pt-0 text-gray-700">
+            {stats.steuerkette > 0 
+              ? `${stats.steuerkette} ${marke}-Modelle in unserer Datenbank haben Steuerkette. 
+                 Die genauen Motorvarianten findest du auf den jeweiligen Modellseiten.`
+              : `In unserer Datenbank haben aktuell keine ${marke}-Modelle reine Steuerketten-Lösungen.`
+            }
+          </div>
+        </details>
+        
+        <details class="border border-gray-200 rounded-lg">
+          <summary class="p-4 font-medium text-gray-900 cursor-pointer hover:bg-gray-50">
+            Wann sollte der Zahnriemen bei {marke} gewechselt werden?
+          </summary>
+          <div class="p-4 pt-0 text-gray-700">
+            Bei den meisten {marke}-Modellen mit Zahnriemen wird ein Wechsel alle 
+            120.000–180.000 km oder alle 5–8 Jahre empfohlen. Die genauen Intervalle 
+            variieren je nach Motor und stehen in der Betriebsanleitung.
+          </div>
+        </details>
+        
+        <details class="border border-gray-200 rounded-lg">
+          <summary class="p-4 font-medium text-gray-900 cursor-pointer hover:bg-gray-50">
+            Was kostet ein Steuerketten-Wechsel bei {marke}?
+          </summary>
+          <div class="p-4 pt-0 text-gray-700">
+            Die Kosten liegen je nach Modell und Motor zwischen €600 und €1.500.
+            Modelle mit Steuerkette an der Rückseite des Motors (z.B. einige VAG-Modelle) 
+            können aufwendiger sein.
+          </div>
+        </details>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{window.PagefindUI&&new PagefindUI({element:"#pagefind-search",translations:{placeholder:"Marke oder Modell eingeben...",zero_results:'Keine Ergebnisse für "[SEARCH_TERM]". Versuche es mit einer anderen Schreibweise.',many_results:"[COUNT] Ergebnisse",one_result:"1 Ergebnis"}})});

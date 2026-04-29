@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{window.PagefindUI&&new PagefindUI({element:"#pagefind-hero",translations:{placeholder:"Marke oder Modell suchen...",zero_results:'Keine Ergebnisse für "[SEARCH_TERM]"'}})});
