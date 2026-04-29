@@ -1,8 +1,12 @@
 /**
  * Datenverarbeitung: JSON-Quelle → Prozessierte Daten
  * 
- * Liest die ohAuto JSON-Daten, validiert, anreichert,
+ * Liest die ohAuto JSON-Daten, validiert,
  * und schreibt optimierte Daten für den Build.
+ * 
+ * KEINE fake Daten! Nur was wir wirklich haben:
+ * - Motorbezeichnung, Leistung, Bauzeit, Motorcode, Steuertrieb, Intervall
+ * - Artikel-Content für Top-Modelle (ohAuto-Recherche)
  */
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
@@ -16,86 +20,19 @@ const ROOT = join(__dirname, '..');
 // Pfade
 const PATHS = {
   raw: join(ROOT, 'data', 'raw', 'vehicles.json'),
+  articles: join(ROOT, 'data', 'articles'),
   processed: join(ROOT, 'data', 'processed', 'vehicles.json'),
   processedDir: join(ROOT, 'data', 'processed'),
 };
 
-// Standard-Wechselkosten (aus Recherche April 2026)
-// Quellen: Retromotion, MyHammer, Autobild
-const KOSTEN_DEFAULT = {
-  'Zahnriemen': { min: 400, max: 900 },      // Kleinwagen €300-600, Mittelklasse €500-900
-  'Steuerkette': { min: 600, max: 1500 },    // Kleinwagen €550-900, Mittelklasse €650-1.300, Oberklasse €1.500+
-};
-
-// Modell-spezifische Kosten (aufwändigere Motoren)
-const KOSTEN_MODELL = {
-  // VW Golf GTI/R - Steuerkette aufwendiger
-  'VW Golf 7 GTI': { steuerkette: { min: 800, max: 1500 } },
-  'VW Golf 7 R': { steuerkette: { min: 900, max: 1800 } },
-  'VW Golf 6 GTI': { steuerkette: { min: 800, max: 1500 } },
-  
-  // Golf 6 1.4 TSI Twincharger - sehr aufwendig
-  'VW Golf 6': { steuerkette: { min: 1200, max: 2000 } },
-  
-  // BMW - teuer
-  'BMW 3': { steuerkette: { min: 1300, max: 2000 } },
-  'BMW 1': { steuerkette: { min: 1000, max: 1600 } },
-  
-  // Audi - teuer
-  'Audi A4': { steuerkette: { min: 900, max: 1800 } },
-  'Audi A6': { steuerkette: { min: 1500, max: 2500 } },
-  
-  // Mercedes - teuer
-  'Mercedes C': { steuerkette: { min: 1150, max: 1800 } },
-  
-  // Ford Focus EcoBoost Zahnriemen in Öl - spezialisierte Werkstätten nötig
-  'Ford Focus': { 
-    zahnriemen: { min: 600, max: 900 },
-    steuerkette: { min: 900, max: 1300 }
-  },
-  
-  // Opel Astra - normal
-  'Opel Astra': { steuerkette: { min: 700, max: 1100 } },
-};
-
-// Risiko-Bewertungen (aus Recherche April 2026)
-// Quellen: CarWiki, Retromotion, Autobild, Repareo
-const RISIKO_BEWERTUNGEN = {
-  // VW Golf 7 - reguläre Motoren haben Zahnriemen (gering Risiko)
-  // GTI/R haben Steuerkette (mittel Risiko)
-  'VW Golf 7 GTI': {
-    'CHHA': ['Kettengeräusch bei Sport-Fahrweise', 'EA888 Gen3 zuverlässiger als Gen2'],
-    'CHHB': ['Kettengeräusch bei Sport-Fahrweise', 'Bei Übermäßiger Beanspruchung prüfen'],
-    'DLBA': ['Performance-Modell', 'Regelmäßige Ölqualität wichtig'],
-  },
-  'VW Golf 7 R': {
-    'CJXC': ['Höhere Last als GTI', 'EA888 Gen3 stabil'],
-    'DNUE': ['Facelift-Motor', 'Zuverlässig bei Wartung'],
-  },
-  
-  // VW Golf 6 - 1.4 TSI Twincharger problematisch
-  'VW Golf 6': {
-    '1.4 TSI Twincharger': ['HOCH: Kettengeräusch ab 80.000km', 'Kompressor+Turbo = hohe Last', 'Kosten €1.200-2.000'],
-    'CAXA': ['Steuerkette', 'Mittel: Kettengeräusch bekannt'],
-    'GTI': ['Mittel: Kettengeräusch ab 100.000km', 'CCZB Motor'],
-  },
-  
-  // Opel Astra J - 1.4 Turbo problematisch
-  'Opel Astra J': {
-    '1.4 Turbo': ['Mittel: Kette dehnt sich', 'Steuerzeiten verstellen sich'],
-  },
-  
-  // Ford Focus 3 - 1.0 EcoBoost KRITISCH
-  'Ford Focus': {
-    '1.0 EcoBoost': ['HOCH: Zahnriemen in Öl', 'Motorschäden bekannt', 'Ford Kulanz bis 7J/100tkm', 'Ab 2018 besser'],
-    '1.6 Ti-VCT': ['Steuerkette', 'Zuverlässig'],
-  },
-  
-  // BMW 3er - N20/N26 Kettenspanner
-  'BMW 3': {
-    'N20': ['Mittel: Kettenspanner-Probleme bekannt', 'Bei Geräusch sofort reagieren'],
-    'N26': ['Mittel: Kettenspanner-Probleme bekannt'],
-  },
+// Artikel-Zuordnung: modell → artikel-slug
+// Die Artikel liegen als Markdown in data/articles/
+const ARTICLE_MAP = {
+  'VW Golf': 'vw-golf-steuerkette-oder-zahnriemen',
+  'VW Passat': 'vw-passat-steuerkette-oder-zahnriemen',
+  'VW Polo': 'vw-polo-steuerkette-oder-zahnriemen',
+  'Opel Astra': 'opel-astra-steuerkette-oder-zahnriemen',
+  'Ford Focus': 'ford-focus-steuerkette-oder-zahnriemen',
 };
 
 /**
@@ -113,81 +50,72 @@ function createSlug(text) {
 }
 
 /**
- * Generiert FAQ-Entries für ein Fahrzeug
+ * Lädt Artikel-Markdown, falls vorhanden
+ */
+function loadArticle(modell) {
+  const artikelSlug = ARTICLE_MAP[modell];
+  if (!artikelSlug) return null;
+  
+  const filePath = join(PATHS.articles, `${artikelSlug}.md`);
+  if (!existsSync(filePath)) return null;
+  
+  const content = readFileSync(filePath, 'utf-8');
+  // Entferne den ohAuto CTA-Abschnitt (wird separat durch AnkaufCTA ersetzt)
+  const cleaned = content
+    .replace(/##\s*(VW|Opel|Ford)[^\n]*verkaufen\?[\s\S]*$/, '')
+    .trim();
+  
+  return {
+    slug: artikelSlug,
+    markdown: cleaned,
+    quelle: 'ohAuto.de Recherche',
+  };
+}
+
+/**
+ * Generiert FAQ nur aus echten Daten (keine fake Kosten)
  */
 function generateFAQ(vehicle) {
-  const { marke, modell, generation, steuertrieb } = vehicle;
+  const { marke, modell, generation, steuertrieb, motoren } = vehicle;
   const fullName = `${marke} ${modell} ${generation || ''}`.trim();
   
   const faq = [
     {
       frage: `Hat der ${fullName} eine Steuerkette oder einen Zahnriemen?`,
-      antwort: `Der ${fullName} hat ${steuertrieb === 'Beides' 
-        ? 'je nach Motorvariante Steuerkette oder Zahnriemen. Siehe Tabelle für Details.'
-        : `eine ${steuertrieb}.`}`,
-      schemaType: 'FAQPage'
-    },
-    {
-      frage: `Was kostet der Wechsel beim ${fullName}?`,
-      antwort: `Die Kosten für einen ${steuertrieb}-Wechsel beim ${fullName} liegen je nach Motor und Region zwischen ${KOSTEN_DEFAULT[steuertrieb]?.min || 400}€ und ${KOSTEN_DEFAULT[steuertrieb]?.max || 1500}€.`,
+      antwort: steuertrieb === 'Beides (je nach Motor)'
+        ? `Der ${fullName} hat je nach Motorvariante Steuerkette oder Zahnriemen. Siehe die Tabelle oben für Details zu jedem Motor.`
+        : `Der ${fullName} hat einen ${steuertrieb}.`,
       schemaType: 'FAQPage'
     }
   ];
   
-  if (steuertrieb === 'Zahnriemen' || steuertrieb === 'Beides') {
-    faq.push({
-      frage: `Wann muss der Zahnriemen beim ${fullName} gewechselt werden?`,
-      antwort: `In der Regel alle 120.000-180.000 km oder alle 5-8 Jahre. Die genauen Intervallangaben finden Sie in der Tabelle der Motorvarianten oder in der Betriebsanleitung.`,
-      schemaType: 'HowTo'
-    });
+  // Echte FAQ nur wenn wir einen Artikel haben
+  if (vehicle.artikel) {
+    // Extrahiere "Was kostet" aus dem Artikel falls vorhanden
+    const kostenMatch = vehicle.artikel.markdown.match(/##\s*Was kostet[^\n]*\n\n([\s\S]*?)(?=\n##|$)/);
+    if (kostenMatch) {
+      faq.push({
+        frage: `Was kostet der Zahnriemenwechsel beim ${fullName}?`,
+        antwort: kostenMatch[1].trim(),
+        schemaType: 'FAQPage'
+      });
+    }
+  }
+  
+  if (steuertrieb === 'Zahnriemen' || steuertrieb === 'Beides (je nach Motor)') {
+    // Intervall aus Motor-Tabelle extrahieren
+    const intervallMotoren = motoren.filter(m => m.steuertrieb === 'Zahnriemen' && m.intervall);
+    if (intervallMotoren.length > 0) {
+      const intervalle = [...new Set(intervallMotoren.map(m => m.intervall))].join(', ');
+      faq.push({
+        frage: `Wann muss der Zahnriemen beim ${fullName} gewechselt werden?`,
+        antwort: `Laut Herstellerangaben: ${intervalle}. Prüfe auch deine Betriebsanleitung für das genaue Intervall deines Motors.`,
+        schemaType: 'HowTo'
+      });
+    }
   }
   
   return faq;
-}
-
-/**
- * Ermittelt Risiko-Level aus Risiko-Texten
- */
-function getRisikoLevel(risikoPunkte) {
-  if (!risikoPunkte || risikoPunkte.length === 0) return 'gering';
-  
-  const risikoText = risikoPunkte.join(' ').toLowerCase();
-  if (risikoText.includes('hoch')) return 'hoch';
-  if (risikoText.includes('kettengeräusch') || risikoText.includes('probleme') || risikoText.includes('dehnt')) return 'mittel';
-  return 'gering';
-}
-
-/**
- * Anreichert Motordaten mit Kosten und Risiken
- */
-function enrichMotors(motors, modellKey) {
-  // Finde modell-spezifische Kosten
-  const modellKosten = KOSTEN_MODELL[modellKey];
-  
-  return motors.map(motor => {
-    const steuertrieb = motor.steuertrieb || 'Unbekannt';
-    const risikoPunkte = RISIKO_BEWERTUNGEN[modellKey]?.[motor.code] || 
-                        RISIKO_BEWERTUNGEN[modellKey]?.[motor.bezeichnung] || 
-                        [];
-    
-    // Kosten: erst modell-spezifisch, dann default
-    let kostenMin, kostenMax;
-    if (modellKosten && modellKosten[steuertrieb.toLowerCase()]) {
-      kostenMin = modellKosten[steuertrieb.toLowerCase()].min;
-      kostenMax = modellKosten[steuertrieb.toLowerCase()].max;
-    } else {
-      kostenMin = KOSTEN_DEFAULT[steuertrieb]?.min || null;
-      kostenMax = KOSTEN_DEFAULT[steuertrieb]?.max || null;
-    }
-    
-    return {
-      ...motor,
-      wechselKostenMin: motor.wechselKostenMin || kostenMin,
-      wechselKostenMax: motor.wechselKostenMax || kostenMax,
-      risikoPunkte: risikoPunkte,
-      risikoLevel: getRisikoLevel(risikoPunkte),
-    };
-  });
 }
 
 /**
@@ -215,69 +143,76 @@ async function buildData() {
   
   // Daten verarbeiten - erzeuge Seite pro Generation mit allen Motorvarianten
   const processed = [];
+  let artikelCount = 0;
   
   rawData.forEach(item => {
     const marke = item.marke || 'Unbekannt';
     const modell = item.modell || 'Unbekannt';
+    
+    // Artikel laden (gilt für alle Generationen dieses Modells)
+    const artikel = loadArticle(modell);
+    if (artikel) artikelCount++;
     
     // Jede Generation bekommt eigene Seite
     (item.generationen || []).forEach((gen, index) => {
       const generation = gen.name?.replace(marke, '').trim() || `Gen-${index + 1}`;
       const slug = createSlug(`${marke}-${modell}-${generation}`);
       
-      // Motoren aus dieser Generation extrahieren
+      // Motoren aus dieser Generation extrahieren - NUR echte Daten
       const motoren = (gen.motoren || []).map(m => ({
         bezeichnung: m.motorisierung || 'Unbekannt',
         code: m.motorcode || '',
         leistung: m.leistung || '',
-        bauzeit: m.bauzeit || gen.baujahre || '',
+        bauzeit: m.bauzeit || '',
         steuertrieb: m.steuertrieb || 'Unbekannt',
         intervall: m.intervall || '',
       }));
       
-      // Steuertrieb-Typ ermitteln (Zahnriemen/Steuerkette/Beides)
+      // Steuertrieb-Typ ermitteln
       const steuertriebe = [...new Set(motoren.map(m => m.steuertrieb))];
       const steuertrieb = steuertriebe.length === 1 
         ? steuertriebe[0] 
         : (steuertriebe.length > 1 ? 'Beides (je nach Motor)' : 'Unbekannt');
       
-      // Basis-Datensatz
+      // Basis-Datensatz - KEINE fake Daten
       const vehicle = {
         id: slug,
         marke,
         modell,
         slug,
         generation,
-        baujahre: gen.baujahre || item.baujahre || null,
         steuertrieb,
         quelle: 'autosmotor.de',
-        motoren: enrichMotors(motoren, `${marke} ${modell} ${generation}`),
-        faq: generateFAQ({ marke, modell, generation, steuertrieb }),
+        motoren,
+        artikel: artikel, // null wenn kein Artikel vorhanden
+        faq: [],
         meta: {
-          risikoBewertung: steuertrieb.includes('Steuerkette') ? 'Mittel' : 'Gering',
-          beliebtheit: Math.floor(Math.random() * 10) + 1,
           letzteAktualisierung: new Date().toISOString().split('T')[0],
         }
       };
+      
+      // FAQ generieren (nach artikel-Zuweisung, damit echte Kosten genutzt werden)
+      vehicle.faq = generateFAQ(vehicle);
       
       processed.push(vehicle);
     });
   });
   
   // Statistiken
+  const totalMotoren = processed.reduce((sum, v) => sum + v.motoren.length, 0);
   const stats = {
     gesamt: processed.length,
     marken: [...new Set(processed.map(v => v.marke))].length,
+    motorenTotal: totalMotoren,
     mitSteuerkette: processed.filter(v => v.steuertrieb === 'Steuerkette').length,
     mitZahnriemen: processed.filter(v => v.steuertrieb === 'Zahnriemen').length,
-    beides: processed.filter(v => v.steuertrieb === 'Beides').length,
+    beides: processed.filter(v => v.steuertrieb === 'Beides (je nach Motor)').length,
     ohneMotoren: processed.filter(v => v.motoren.length === 0).length,
+    mitArtikel: processed.filter(v => v.artikel !== null).length,
   };
   
   // Schreiben
   writeFileSync(PATHS.processed, JSON.stringify(processed, null, 2));
-  
-  // Statistik-Datei
   writeFileSync(
     join(PATHS.processedDir, 'stats.json'),
     JSON.stringify(stats, null, 2)
@@ -285,12 +220,14 @@ async function buildData() {
   
   console.log('\n✅ Verarbeitung abgeschlossen!');
   console.log('\n📈 Statistiken:');
-  console.log(`   • ${stats.gesamt} Fahrzeuge`);
+  console.log(`   • ${stats.gesamt} Generationen-Seiten`);
+  console.log(`   • ${stats.motorenTotal} Motorvarianten`);
   console.log(`   • ${stats.marken} Marken`);
   console.log(`   • ${stats.mitSteuerkette} mit Steuerkette`);
   console.log(`   • ${stats.mitZahnriemen} mit Zahnriemen`);
   console.log(`   • ${stats.beides} mit Beidem (je nach Motor)`);
-  console.log(`   • ${stats.ohneMotoren} ohne Motor-Details (nachpflegen)`);
+  console.log(`   • ${stats.mitArtikel} mit Experten-Artikel`);
+  console.log(`   • ${stats.ohneMotoren} ohne Motor-Details`);
   
   console.log(`\n💾 Ausgabe: ${PATHS.processed}`);
 }

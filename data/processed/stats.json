@@ -1,8 +1,10 @@
 {
   "gesamt": 150,
   "marken": 17,
+  "motorenTotal": 1784,
   "mitSteuerkette": 20,
   "mitZahnriemen": 14,
-  "beides": 4,
-  "ohneMotoren": 25
+  "beides": 87,
+  "ohneMotoren": 25,
+  "mitArtikel": 21
 }

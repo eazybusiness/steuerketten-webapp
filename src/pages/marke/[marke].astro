@@ -20,13 +20,13 @@ export async function getStaticPaths() {
 const { marke, vehicles } = Astro.props;
 
 const title = `${marke} – Steuerkette oder Zahnriemen? Alle Modelle`;
-const description = `Welche ${marke}-Modelle haben Steuerkette, welche Zahnriemen? Übersicht aller ${vehicles.length} Modelle mit Baujahren, Motorvarianten und Wechselkosten.`;
+const description = `Welche ${marke}-Modelle haben Steuerkette, welche Zahnriemen? Übersicht aller ${vehicles.length} Generationen mit Motorvarianten.`;
 
 // Statistik für diese Marke
 const stats = {
   steuerkette: vehicles.filter(v => v.steuertrieb === 'Steuerkette').length,
   zahnriemen: vehicles.filter(v => v.steuertrieb === 'Zahnriemen').length,
-  beides: vehicles.filter(v => v.steuertrieb === 'Beides').length,
+  beides: vehicles.filter(v => v.steuertrieb === 'Beides (je nach Motor)').length,
 };
 
 // Schema.org
@@ -110,9 +110,9 @@ const schema = {
                   </span>
                 )}
               </h2>
-              {vehicle.baujahre && (
+              {vehicle.motoren.length > 0 && (
                 <p class="text-sm text-gray-500 mt-1">
-                  {vehicle.baujahre.von}–{vehicle.baujahre.bis}
+                  {vehicle.motoren.length} Motorvarianten
                 </p>
               )}
             </div>
@@ -137,9 +137,11 @@ const schema = {
             {vehicle.steuertrieb}
           </div>
           
-          <div class="mt-4 text-sm text-gray-500">
-            {vehicle.motoren.length} Motorvarianten
-          </div>
+          {vehicle.artikel && (
+            <div class="mt-4 text-sm text-amber-600 font-medium">
+              Experten-Artikel verfügbar
+            </div>
+          )}
         </a>
       ))}
     </div>
@@ -177,12 +179,12 @@ const schema = {
         
         <details class="border border-gray-200 rounded-lg">
           <summary class="p-4 font-medium text-gray-900 cursor-pointer hover:bg-gray-50">
-            Was kostet ein Steuerketten-Wechsel bei {marke}?
+            Was kostet der Zahnriemenwechsel bei {marke}?
           </summary>
           <div class="p-4 pt-0 text-gray-700">
-            Die Kosten liegen je nach Modell und Motor zwischen €600 und €1.500.
-            Modelle mit Steuerkette an der Rückseite des Motors (z.B. einige VAG-Modelle) 
-            können aufwendiger sein.
+            Die Kosten variieren je nach Modell, Motor und Werkstatt stark. 
+            Konkrete Preise findest du auf den Modellseiten mit Experten-Artikel.
+            Als grober Anhaltspunkt: 400–1.200 € inkl. Wasserpumpe.
           </div>
         </details>
       </div>
