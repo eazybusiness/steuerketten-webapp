@@ -36,6 +36,45 @@ const ARTICLE_MAP = {
 };
 
 /**
+ * Marken-Varianten (VW → Volkswagen, BMW → Bayerische Motoren Werke, etc.)
+ */
+function getBrandVariants(marke) {
+  const variants = {
+    'VW': ['Volkswagen'],
+    'Volkswagen': ['VW'],
+    'BMW': ['Bayerische Motoren Werke'],
+    'Mercedes': ['Mercedes-Benz'],
+    'Mercedes-Benz': ['Mercedes'],
+    'Opel': ['Adam Opel'],
+    'Audi': ['AUDI AG'],
+    'Ford': ['Ford-Werke'],
+    'Peugeot': ['Peugeot S.A.'],
+    'Renault': ['Renault S.A.'],
+    'Fiat': ['Fiat S.p.A.'],
+    'Skoda': ['Škoda', 'Skoda Auto'],
+    'Seat': ['SEAT', 'Seat S.A.'],
+    'Volvo': ['Volvo Car'],
+    'Toyota': ['Toyota Motor'],
+    'Nissan': ['Nissan Motor'],
+    'Suzuki': ['Suzuki Motor'],
+    'Subaru': ['Subaru Corporation'],
+    'Hyundai': ['Hyundai Motor'],
+    'Kia': ['Kia Motors'],
+    'Mazda': ['Mazda Motor'],
+    'Honda': ['Honda Motor'],
+    'Citroen': ['Citroën', 'Automobiles Citroen'],
+  };
+  return variants[marke] || [];
+}
+
+/**
+ * Escaped Sonderzeichen für Regex
+ */
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
  * Erzeugt URL-freundlichen Slug
  */
 function createSlug(text) {
@@ -147,15 +186,47 @@ async function buildData() {
   
   rawData.forEach(item => {
     const marke = item.marke || 'Unbekannt';
-    const modell = item.modell || 'Unbekannt';
+    const markeVariants = [marke, ...getBrandVariants(marke)];
+    
+    // Bereinige modell-Name: entferne Marken-Präfix (VW Beetle → Beetle)
+    let modell = item.modell || 'Unbekannt';
+    markeVariants.forEach(variant => {
+      modell = modell.replace(new RegExp(`^${escapeRegex(variant)}\\s*`, 'i'), '');
+    });
+    modell = modell.trim() || item.modell || 'Unbekannt';
     
     // Artikel laden (gilt für alle Generationen dieses Modells)
-    const artikel = loadArticle(modell);
+    const artikel = loadArticle(item.modell); // Original-Name für Artikel-Match
     if (artikel) artikelCount++;
     
     // Jede Generation bekommt eigene Seite
     (item.generationen || []).forEach((gen, index) => {
-      const generation = gen.name?.replace(marke, '').trim() || `Gen-${index + 1}`;
+      let generation = gen.name || `Gen-${index + 1}`;
+      
+      // Entferne Marken-Präfixe aus Generation-Name
+      markeVariants.forEach(variant => {
+        generation = generation.replace(new RegExp(`^${escapeRegex(variant)}\\s*`, 'i'), '');
+      });
+      
+      // Entferne Modell-Name aus Generation-Name (VW Golf 8 → 8, nicht "Golf Golf 8")
+      if (modell && generation.toLowerCase().startsWith(modell.toLowerCase())) {
+        generation = generation.slice(modell.length).trim();
+      }
+      
+      // Entferne "Alle Modelle von ..." 
+      generation = generation.replace(/^Alle Modelle von\s+\S+\s*/i, '');
+      
+      // Bereinige Datenmüll in Generation-Namen
+      generation = generation
+        .replace(/Zahnriemen oder Steuerkette.*$/i, '')  // Müll aus Quelldaten
+        .replace(/BMW \d+er.*$/i, '')                    // Falsche Marken-Referenz
+        .replace(/^-Benz\s*/i, '')                        // Rest von Mercedes-Benz
+        .replace(/Nockenwellenantrieb.*$/i, '')           // Technischer Müll
+        .replace(/Andere \S+ Modelle/i, '')               // Generische Gruppierung
+        .replace(/-Motoren\s*-/i, '-')                    // Überflüssige Trenner
+        .trim();
+      
+      generation = generation || `Gen-${index + 1}`;
       const slug = createSlug(`${marke}-${modell}-${generation}`);
       
       // Motoren aus dieser Generation extrahieren - NUR echte Daten
