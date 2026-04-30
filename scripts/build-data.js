@@ -36,6 +36,105 @@ const ARTICLE_MAP = {
 };
 
 /**
+ * Extrahiert das echte Modell aus der Motorbezeichnung.
+ * Die Quelldaten haben falsche modell-Zuordnungen, aber die Motorbezeichnung
+ * ist korrekt: "VW Bora 1.4" → "Bora", "VW Golf 1.4 TSI" → "Golf"
+ */
+function extractModellFromMotor(motorBezeichnung, marke, markeVariants) {
+  if (!motorBezeichnung || motorBezeichnung === 'Unbekannt') return 'Unbekannt';
+  
+  // Fremdmarken-Motoren herausfiltern (z.B. BMW-Motoren unter Mercedes)
+  const fremdMarken = ['BMW', 'Audi', 'VW', 'Volkswagen', 'Opel', 'Ford', 'Peugeot', 'Renault', 'Fiat', 'Toyota'];
+  const isFremdMotor = fremdMarken.some(fm => {
+    if (fm === marke) return false; // Eigene Marke ist OK
+    return motorBezeichnung.toLowerCase().startsWith(fm.toLowerCase() + ' ');
+  });
+  if (isFremdMotor) return null; // Ignoriere fremde Motoren
+  
+  // Bekannte Modelle mit Mustern
+  const knownModels = {
+    'VW': ['Golf', 'Polo', 'Passat', 'Tiguan', 'Touareg', 'Touran', 'Caddy', 
+           'Sharan', 'Bora', 'Beetle', 'Fox', 'Lupo', 'up!', 'Scirocco', 'Eos',
+           'CC', 'Arteon', 'T-Roc', 'T-Cross', 'Taigo', 'ID.3', 'ID.4', 'ID.5',
+           'Transporter', 'Crafter', 'Amarok', 'T5', 'T6'],
+    'Audi': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Q2', 'Q3', 'Q5', 'Q7', 'Q8',
+             'TT', 'R8', 'e-tron'],
+    'BMW': ['1er', '2er', '3er', '4er', '5er', '6er', '7er', '8er', 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7',
+            'i3', 'i4', 'iX', 'M2', 'M3', 'M4', 'M5', 'Z4'],
+    'Mercedes': ['A-Klasse', 'B-Klasse', 'C-Klasse', 'E-Klasse', 'S-Klasse', 
+                 'CLA', 'GLA', 'GLB', 'GLC', 'GLE', 'GLS', 'SLK', 'SL', 'V-Klasse'],
+    'Opel': ['Astra', 'Corsa', 'Insignia', 'Mokka', 'Crossland', 'Grandland', 
+             'Zafira', 'Meriva', 'Kadett', 'Vectra', 'Signum', 'Combo', 'Movano', 'Adam'],
+    'Ford': ['Focus', 'Fiesta', 'Mondeo', 'Kuga', 'Puma', 'EcoSport', 'Edge', 
+             'S-Max', 'C-Max', 'Galaxy', 'Tourneo', 'Transit', 'Ranger', 'Ka'],
+    'Skoda': ['Octavia', 'Fabia', 'Superb', 'Kodiaq', 'Karoq', 'Kamiq', 'Rapid', 
+              'Roomster', 'Yeti', 'Enyaq', 'Citigo'],
+    'Seat': ['Ibiza', 'Leon', 'Ateca', 'Arona', 'Tarraco', 'Altea', 'Toledo', 
+             'Mii', 'Alhambra', 'Cordoba'],
+    'Renault': ['Clio', 'Megane', 'Captur', 'Kadjar', 'Scenic', 'Laguna', 
+                'Twingo', 'Koleos', 'Espace', 'Talisman', 'Modus', 'Fluence'],
+    'Peugeot': ['208', '308', '508', '2008', '3008', '5008', '108', '206', '207', '307', '407', '607', 'Partner'],
+    'Fiat': ['500', 'Panda', 'Punto', 'Tipo', '500X', '500L', 'Ducato', 'Doblo', 
+             'Bravo', 'Stilo', 'Idea', 'Qubo', 'Talento', 'Fullback'],
+    'Toyota': ['Yaris', 'Corolla', 'Auris', 'Avensis', 'RAV4', 'C-HR', 'Camry', 
+               'Prius', 'Aygo', 'Supra', 'Land Cruiser', 'Hilux'],
+    'Nissan': ['Qashqai', 'Juke', 'X-Trail', 'Micra', 'Note', 'Leaf', 'Navara', 
+               'Pathfinder', '370Z', 'GT-R'],
+    'Hyundai': ['i10', 'i20', 'i30', 'Tucson', 'Kona', 'Santa Fe', 'Ioniq', 
+                'Accent', 'Elantra', 'Sonata'],
+    'Kia': ['Picanto', 'Rio', 'Ceed', 'Sportage', 'Sorento', 'Stonic', 'Niro', 
+            'ProCeed', 'EV6', 'Soul'],
+    'Mazda': ['2', '3', '6', 'CX-3', 'CX-5', 'CX-30', 'CX-9', 'MX-5', 'MX-30'],
+    'Honda': ['Civic', 'Accord', 'CR-V', 'HR-V', 'Jazz', 'Fit', 'Type R'],
+    'Volvo': ['V40', 'V50', 'V60', 'V70', 'V90', 'XC40', 'XC60', 'XC70', 'XC90', 
+              'S40', 'S60', 'S80', 'S90', 'C30', 'C70'],
+    'Subaru': ['Impreza', 'Outback', 'Forester', 'XV', 'WRX', 'BRZ', 'Levorg', 'Legacy'],
+    'Suzuki': ['Swift', 'Vitara', 'S-Cross', 'Ignis', 'Baleno', 'Jimny', 'Alto', 'Celerio'],
+    'Mini': ['ONE', 'Cooper', 'Cooper S', 'Cooper D', 'JCW'],
+    'Smart': ['ForTwo', 'ForFour', 'Roadster'],
+    'Citroen': ['C1', 'C2', 'C3', 'C4', 'C5', 'C3 Aircross', 'C5 Aircross', 'Berlingo', 'DS3', 'DS4', 'DS5'],
+    'Saab': ['9-3', '9-5', '9-7X'],
+  };
+  
+  // Spezielle Muster für Marken mit Klassennamen statt Modellnamen
+  // Mercedes: "C 180" → C-Klasse, "E 200" → E-Klasse, "A 160" → A-Klasse
+  const mercedesKlassePattern = /^Mercedes[- ]?(Benz)?\s+([A-E])\s/i;
+  if (marke === 'Mercedes') {
+    const klasseMatch = motorBezeichnung.match(mercedesKlassePattern);
+    if (klasseMatch) {
+      return `${klasseMatch[2]}-Klasse`;
+    }
+    // "Mercedes GLA 200" → GLA
+    const suvMatch = motorBezeichnung.match(/^Mercedes[- ]?(Benz)?\s+(GL[A-S]|SLK?|V-Klasse)\s/i);
+    if (suvMatch) return suvMatch[2];
+  }
+  
+  const models = knownModels[marke] || [];
+  
+  // Prüfe ob ein bekanntes Modell in der Bezeichnung vorkommt
+  // Normalisiere Akzente für Matching: Mégane → Megane
+  const normalizedBezeichnung = motorBezeichnung
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  
+  for (const model of models) {
+    const pattern = new RegExp(`(?:^|\\s)${escapeRegex(model)}(?:\\s|$|\\d)`, 'i');
+    if (pattern.test(normalizedBezeichnung) || pattern.test(motorBezeichnung)) {
+      return model;
+    }
+  }
+  
+  // Fallback: Erstes Wort nach Marken-Präfix entfernen → Rest ist Modell
+  let cleaned = motorBezeichnung;
+  markeVariants.forEach(variant => {
+    cleaned = cleaned.replace(new RegExp(`^${escapeRegex(variant)}\\s*`, 'i'), '');
+  });
+  
+  // Extrahiere Modellname (unterstützt auch é, è, à etc.)
+  const match = cleaned.match(/^([A-Za-z0-9äöüßéèàâêîôûëïüÿÄÖÜÉÈÀÂÊÎÔÛËÏÜŸ-]+(?:\s+[A-Z0-9éè][a-z0-9éè]*)?)/);
+  return match ? match[1] : motorBezeichnung.split(' ')[1] || 'Unbekannt';
+}
+
+/**
  * Marken-Varianten (VW → Volkswagen, BMW → Bayerische Motoren Werke, etc.)
  */
 function getBrandVariants(marke) {
@@ -184,89 +283,95 @@ async function buildData() {
   const processed = [];
   let artikelCount = 0;
   
+  // Phase 1: Alle Motoren sammeln und nach ECHTEM Modell gruppieren
+  // Die Quelldaten haben falsche modell-Zuordnungen (z.B. VW Beetle enthält Bora-Motoren)
+  // Lösung: Modell aus der Motorbezeichnung ableiten
+  
+  const motorPool = []; // { marke, echtesModell, generation, motor }
+  
   rawData.forEach(item => {
     const marke = item.marke || 'Unbekannt';
     const markeVariants = [marke, ...getBrandVariants(marke)];
     
-    // Bereinige modell-Name: entferne Marken-Präfix (VW Beetle → Beetle)
-    let modell = item.modell || 'Unbekannt';
-    markeVariants.forEach(variant => {
-      modell = modell.replace(new RegExp(`^${escapeRegex(variant)}\\s*`, 'i'), '');
+    (item.generationen || []).forEach((gen) => {
+      (gen.motoren || []).forEach(m => {
+        const motorBezeichnung = m.motorisierung || '';
+        
+        // Echtes Modell aus Motorbezeichnung extrahieren
+        // z.B. "VW Bora 1.4" → "Bora", "VW Golf 1.4 TSI" → "Golf"
+        // Gibt null zurück bei Fremdmarken-Motoren (z.B. BMW-Motor unter Mercedes)
+        let echtesModell = extractModellFromMotor(motorBezeichnung, marke, markeVariants);
+        
+        // Fremdmarken-Motoren überspringen
+        if (!echtesModell) return;
+        
+        // Generische Namen überspringen
+        if (['Modell', 'Unbekannt', 'Nockenwellenantrieb'].includes(echtesModell)) return;
+        
+        motorPool.push({
+          marke,
+          echtesModell,
+          generationName: gen.name || '',
+          motor: {
+            bezeichnung: motorBezeichnung || 'Unbekannt',
+            code: m.motorcode || '',
+            leistung: m.leistung || '',
+            bauzeit: m.bauzeit || '',
+            steuertrieb: m.steuertrieb || 'Unbekannt',
+            intervall: m.intervall || '',
+          }
+        });
+      });
     });
-    modell = modell.trim() || item.modell || 'Unbekannt';
+  });
+  
+  // Phase 2: Nach (marke, echtesModell) gruppieren → eine Seite pro Modell
+  const modelGroups = {};
+  motorPool.forEach(item => {
+    const key = `${item.marke}||${item.echtesModell}`;
+    if (!modelGroups[key]) {
+      modelGroups[key] = {
+        marke: item.marke,
+        modell: item.echtesModell,
+        motoren: [],
+      };
+    }
+    modelGroups[key].motoren.push(item.motor);
+  });
+  
+  // Phase 3: Für jede Modellgruppe einen Datensatz erzeugen
+  Object.values(modelGroups).forEach(group => {
+    const { marke, modell, motoren } = group;
+    const slug = createSlug(`${marke}-${modell}`);
     
-    // Artikel laden (gilt für alle Generationen dieses Modells)
-    const artikel = loadArticle(item.modell); // Original-Name für Artikel-Match
+    // Steuertrieb-Typ ermitteln
+    const steuertriebe = [...new Set(motoren.map(m => m.steuertrieb))];
+    const steuertrieb = steuertriebe.length === 1 
+      ? steuertriebe[0] 
+      : (steuertriebe.length > 1 ? 'Beides (je nach Motor)' : 'Unbekannt');
+    
+    // Artikel laden
+    const artikel = loadArticle(`VW ${modell}`) || loadArticle(modell) || loadArticle(`${marke} ${modell}`);
     if (artikel) artikelCount++;
     
-    // Jede Generation bekommt eigene Seite
-    (item.generationen || []).forEach((gen, index) => {
-      let generation = gen.name || `Gen-${index + 1}`;
-      
-      // Entferne Marken-Präfixe aus Generation-Name
-      markeVariants.forEach(variant => {
-        generation = generation.replace(new RegExp(`^${escapeRegex(variant)}\\s*`, 'i'), '');
-      });
-      
-      // Entferne Modell-Name aus Generation-Name (VW Golf 8 → 8, nicht "Golf Golf 8")
-      if (modell && generation.toLowerCase().startsWith(modell.toLowerCase())) {
-        generation = generation.slice(modell.length).trim();
+    const vehicle = {
+      id: slug,
+      marke,
+      modell,
+      slug,
+      generation: '',  // Eine Seite pro Modell, nicht pro Generation
+      steuertrieb,
+      quelle: 'autosmotor.de',
+      motoren,
+      artikel,
+      faq: [],
+      meta: {
+        letzteAktualisierung: new Date().toISOString().split('T')[0],
       }
-      
-      // Entferne "Alle Modelle von ..." 
-      generation = generation.replace(/^Alle Modelle von\s+\S+\s*/i, '');
-      
-      // Bereinige Datenmüll in Generation-Namen
-      generation = generation
-        .replace(/Zahnriemen oder Steuerkette.*$/i, '')  // Müll aus Quelldaten
-        .replace(/BMW \d+er.*$/i, '')                    // Falsche Marken-Referenz
-        .replace(/^-Benz\s*/i, '')                        // Rest von Mercedes-Benz
-        .replace(/Nockenwellenantrieb.*$/i, '')           // Technischer Müll
-        .replace(/Andere \S+ Modelle/i, '')               // Generische Gruppierung
-        .replace(/-Motoren\s*-/i, '-')                    // Überflüssige Trenner
-        .trim();
-      
-      generation = generation || `Gen-${index + 1}`;
-      const slug = createSlug(`${marke}-${modell}-${generation}`);
-      
-      // Motoren aus dieser Generation extrahieren - NUR echte Daten
-      const motoren = (gen.motoren || []).map(m => ({
-        bezeichnung: m.motorisierung || 'Unbekannt',
-        code: m.motorcode || '',
-        leistung: m.leistung || '',
-        bauzeit: m.bauzeit || '',
-        steuertrieb: m.steuertrieb || 'Unbekannt',
-        intervall: m.intervall || '',
-      }));
-      
-      // Steuertrieb-Typ ermitteln
-      const steuertriebe = [...new Set(motoren.map(m => m.steuertrieb))];
-      const steuertrieb = steuertriebe.length === 1 
-        ? steuertriebe[0] 
-        : (steuertriebe.length > 1 ? 'Beides (je nach Motor)' : 'Unbekannt');
-      
-      // Basis-Datensatz - KEINE fake Daten
-      const vehicle = {
-        id: slug,
-        marke,
-        modell,
-        slug,
-        generation,
-        steuertrieb,
-        quelle: 'autosmotor.de',
-        motoren,
-        artikel: artikel, // null wenn kein Artikel vorhanden
-        faq: [],
-        meta: {
-          letzteAktualisierung: new Date().toISOString().split('T')[0],
-        }
-      };
-      
-      // FAQ generieren (nach artikel-Zuweisung, damit echte Kosten genutzt werden)
-      vehicle.faq = generateFAQ(vehicle);
-      
-      processed.push(vehicle);
-    });
+    };
+    
+    vehicle.faq = generateFAQ(vehicle);
+    processed.push(vehicle);
   });
   
   // Statistiken
