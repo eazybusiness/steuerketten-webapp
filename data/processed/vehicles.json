@@ -15637,5 +15637,349 @@
     "meta": {
       "letzteAktualisierung": "2026-05-31"
     }
+  },
+  {
+    "id": "audi-a4",
+    "marke": "Audi",
+    "modell": "A4",
+    "slug": "audi-a4",
+    "generation": "",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [
+      {
+        "bezeichnung": "Audi A4 1.8T",
+        "code": "ALT, AWM",
+        "leistung": "110–132 KW",
+        "bauzeit": "2001–2008",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "90.000 km / 4 Jahre"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TFSI (BFB)",
+        "code": "BFB",
+        "leistung": "110 KW / 150 PS",
+        "bauzeit": "2004–2008",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000 km / 5 Jahre"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TDI",
+        "code": "BPW, BRE, BNA",
+        "leistung": "100–125 KW",
+        "bauzeit": "2004–2008",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000 km / 5 Jahre"
+      },
+      {
+        "bezeichnung": "Audi A4 3.0 TDI",
+        "code": "ASB, BMK",
+        "leistung": "150–176 KW",
+        "bauzeit": "2004–2008",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TFSI",
+        "code": "CDNB, CDNC, CNCD",
+        "leistung": "132–155 KW",
+        "bauzeit": "2008–2015",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TDI",
+        "code": "CAHA, CAHB",
+        "leistung": "100–130 KW",
+        "bauzeit": "2008–2015",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "210.000 km"
+      },
+      {
+        "bezeichnung": "Audi A4 3.0 TDI",
+        "code": "CGLC, CGLA",
+        "leistung": "176–200 KW",
+        "bauzeit": "2008–2015",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TFSI",
+        "code": "DKNA, DKTB",
+        "leistung": "140–185 KW",
+        "bauzeit": "ab 2015",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "Audi A4 2.0 TDI",
+        "code": "DETA, DETB",
+        "leistung": "90–140 KW",
+        "bauzeit": "ab 2015",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "Audi A4 3.0 TDI",
+        "code": "CSWB",
+        "leistung": "210 KW",
+        "bauzeit": "ab 2015",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      }
+    ],
+    "artikel": {
+      "slug": "audi-a4-steuerkette-oder-zahnriemen",
+      "markdown": "# Audi A4 – Steuerkette oder Zahnriemen?\n\nDu fährst einen Audi A4 und fragst dich, ob dein Motor eine Steuerkette oder einen Zahnriemen hat? Die Antwort hängt vor allem von der Generation und dem Motor ab. Ältere A4-Modelle – insbesondere die Diesel-Vierzylinder – liefen noch mit Zahnriemen. Modernere Baujahre setzen fast durchgängig auf Steuerkette. Wir zeigen dir, was für deinen A4 gilt.\n\n## Audi A4 – Steuerkette oder Zahnriemen nach Generation\n\n### B6 / B7 (2001 – 2008)\n\nDie B6- und B7-Generationen waren motorenseitig noch gemischt. Die 1.8T- und 2.0T-Benziner (AWM, ALT, BFB) nutzen einen **Zahnriemen** mit Wechselintervall von 90.000 bis 120.000 km. Die 2.0 TDI-Vierzylinder (BPW, BRE, BNA) fahren ebenfalls mit **Zahnriemen**. Die 3.0 TDI-Sechszylinder dagegen setzen auf **Steuerkette**.\n\n| Motor | Hubraum | Steuertrieb | Wechselintervall |\n|-------|---------|-------------|-----------------|\n| ALT, AWM (1.8T) | Benziner | Zahnriemen | 90.000 km / 4 Jahre |\n| BFB (2.0 TFSI) | Benziner | Zahnriemen | 120.000 km / 5 Jahre |\n| BPW, BRE (2.0 TDI) | Diesel | Zahnriemen | 120.000 km / 5 Jahre |\n| ASB, BMK (3.0 TDI) | Diesel | Steuerkette | wartungsfrei |\n\n### B8 (2008 – 2015)\n\nMit dem B8 erfolgte ein deutlicher Wechsel: Die neuen 2.0 TFSI-Benziner (CDNB, CDNC, CNCD) arbeiten jetzt mit **Steuerkette**. Die 2.0 TDI-Dieselmotoren (CAHA, CAHB) behalten zunächst noch den **Zahnriemen** mit einem langen Intervall von 210.000 km. Alle Sechs- und Achtzylinder – 3.0 TDI, 3.0 TFSI – laufen mit **Steuerkette**.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| CDNB, CDNC (2.0 TFSI) | Benziner | Steuerkette | wartungsfrei |\n| CAHA, CAHB (2.0 TDI) | Diesel | Zahnriemen | 210.000 km |\n| CGLC, CGLA (3.0 TDI) | Diesel | Steuerkette | wartungsfrei |\n\n### B9 (ab 2015)\n\nDie B9-Generation bringt den großen Schritt: Nahezu alle Motoren laufen jetzt mit **Steuerkette** – inklusive der Vierzylinder-Dieselmotoren. Der 2.0 TDI (DETA, DETB) setzt ebenso auf Steuerkette wie die gesamte TFSI-Benzinerpalette.\n\n## Die Faustregel für den Audi A4\n\n| Generation | Motortyp | Steuertrieb |\n|------------|----------|-------------|\n| B6/B7 | 1.8T / 2.0 TFSI / 2.0 TDI | Zahnriemen |\n| B6/B7 | 3.0 TDI | Steuerkette |\n| B8 | 2.0 TFSI | Steuerkette |\n| B8 | 2.0 TDI | Zahnriemen |\n| B9 (ab 2015) | Alle Motoren | Steuerkette |\n\n## Kosten beim Zahnriemenwechsel\n\nEin Zahnriemenwechsel am Audi A4 (B6/B7/B8) kostet je nach Motor und Werkstatt zwischen 400 und 900 Euro – beim gleichzeitigen Tausch der Wasserpumpe können es 600 bis 1.200 Euro sein. Ein gerissener Zahnriemen führt fast immer zu einem kapitalen Motorschaden. Wer die Fälligkeitsintervalle nicht einhält, riskiert einen Totalausfall.\n\n## Was tun, wenn der Zahnriemen fällig ist?\n\nWenn du merkst, dass der Zahnriemenwechsel deines Audi A4 (B6/B7/B8) ansteht oder bereits überfällig ist, stellt sich die Frage: Reparatur oder Verkauf? Die Antwort hängt vom Fahrzeugwert und dem Gesamtzustand ab. Bei einem B8 mit 150.000 km und intaktem Rest-Fahrzeug lohnt sich der Wechsel oft noch. Bei einem B6 mit 250.000 km und weiteren Verschleißerscheinungen übersteigt die Rechnung schnell den Fahrzeugwert.\n\nIn letzterem Fall bietet der direkte Verkauf ohne vorherige Reparatur die sinnvollere Alternative. Wir bewerten das Fahrzeug so wie es ist – und zahlen einen fairen Preis, der den ausstehenden Zahnriemenwechsel bereits einkalkuliert.\n\n## Audi A4 mit Motorschaden oder Zahnriemenschaden verkaufen?\n\nWenn dein A4 einen Motorschaden oder einen gerissenen Zahnriemen hat und eine Reparatur wirtschaftlich nicht mehr sinnvoll ist: Bei ohAuto.de kaufen wir auch Audi A4 mit Schäden, ohne TÜV oder mit hoher Laufleistung. Unser internationales Exportnetzwerk sorgt für faire Preise auch für defekte Fahrzeuge. Schick uns deine Daten – du hast innerhalb von 24 Stunden ein unverbindliches Angebot, inklusive kostenloser Abholung.",
+      "quelle": "ohAuto.de Recherche"
+    },
+    "faq": [
+      {
+        "frage": "Hat der Audi A4 eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Audi A4 hat je nach Motorvariante Steuerkette oder Zahnriemen. Siehe die Tabelle oben für Details zu jedem Motor.",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Wann muss der Zahnriemen beim Audi A4 gewechselt werden?",
+        "antwort": "Laut Herstellerangaben: 90.000 km / 4 Jahre, 120.000 km / 5 Jahre, 210.000 km. Prüfe auch deine Betriebsanleitung für das genaue Intervall deines Motors.",
+        "schemaType": "HowTo"
+      }
+    ],
+    "meta": {
+      "letzteAktualisierung": "2026-05-31"
+    }
+  },
+  {
+    "id": "bmw-3er",
+    "marke": "BMW",
+    "modell": "3er",
+    "slug": "bmw-3er",
+    "generation": "",
+    "steuertrieb": "Steuerkette",
+    "quelle": "autosmotor.de",
+    "motoren": [
+      {
+        "bezeichnung": "BMW 3er 316i/318i",
+        "code": "N43",
+        "leistung": "90–105 KW",
+        "bauzeit": "2007–2012",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 318i/320i",
+        "code": "N46",
+        "leistung": "95–110 KW",
+        "bauzeit": "2005–2011",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 323i/325i/330i",
+        "code": "N52",
+        "leistung": "130–190 KW",
+        "bauzeit": "2005–2012",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 335i",
+        "code": "N54",
+        "leistung": "225 KW / 306 PS",
+        "bauzeit": "2006–2012",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 316d/318d/320d/325d",
+        "code": "N47",
+        "leistung": "85–150 KW",
+        "bauzeit": "2007–2012",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei (Kettenprobleme bei N47 bekannt)"
+      },
+      {
+        "bezeichnung": "BMW 3er 316i",
+        "code": "B38",
+        "leistung": "85 KW / 116 PS",
+        "bauzeit": "2015–2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 318i/320i/325i/330i",
+        "code": "B48",
+        "leistung": "100–190 KW",
+        "bauzeit": "2015–2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 340i",
+        "code": "B58",
+        "leistung": "265 KW / 360 PS",
+        "bauzeit": "2015–2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 316d/318d/320d/325d",
+        "code": "B47",
+        "leistung": "85–140 KW",
+        "bauzeit": "2015–2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 318i/320i/330i",
+        "code": "B48",
+        "leistung": "115–190 KW",
+        "bauzeit": "ab 2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      },
+      {
+        "bezeichnung": "BMW 3er 318d/320d/330d",
+        "code": "B47",
+        "leistung": "110–190 KW",
+        "bauzeit": "ab 2019",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      }
+    ],
+    "artikel": {
+      "slug": "bmw-3er-steuerkette-oder-zahnriemen",
+      "markdown": "# BMW 3er – Steuerkette oder Zahnriemen?\n\nDu fährst einen BMW 3er und fragst dich, ob dein Motor mit einer Steuerkette oder einem Zahnriemen läuft? Die gute Nachricht: Der BMW 3er setzt in den meisten Baujahren auf eine **Steuerkette** – wartungsfrei, robust, auf Langlebigkeit ausgelegt. Aber es gibt Ausnahmen, und gerade bei älteren Dieselmotoren lohnt sich ein genauer Blick.\n\n## BMW 3er – Steuerkette oder Zahnriemen nach Generation\n\n### E90 / E91 / E92 / E93 (2005 – 2012)\n\nBei der E90-Generation gilt: Benziner fast ausschließlich mit **Steuerkette**, Dieselmotoren ebenfalls mit **Steuerkette**. Der bekannte N47-Dieselmotor (318d, 320d, 325d) hat jedoch eine Besonderheit: Die Steuerkette sitzt **hinten am Motor** – was einen Austausch zur aufwändigen und teuren Reparatur macht. Der N47 ist für vorzeitigen Kettenverschleiß bekannt; rasselnde Geräusche beim Kaltstart sind ein Warnzeichen.\n\n| Motor | Typ | Steuertrieb | Hinweis |\n|-------|-----|-------------|---------|\n| N43 (316i, 318i) | Benziner | Steuerkette | wartungsfrei |\n| N46 (318i, 320i) | Benziner | Steuerkette | wartungsfrei |\n| N52 (323i, 325i, 330i) | Benziner | Steuerkette | wartungsfrei |\n| N54 (335i) | Benziner | Steuerkette | wartungsfrei |\n| N47 (316d–325d) | Diesel | Steuerkette | Kettenprobleme bekannt, hinten liegend |\n\n### F30 / F31 / F34 (2012 – 2019)\n\nDie F30-Generation modernisierte die Motorenpalette. Alle gängigen Motoren – Benziner wie Diesel – arbeiten mit **Steuerkette**. Der B47-Dieselmotor verbesserte die Schwächen des N47 deutlich; die Kette sitzt nun vorne am Motor und lässt sich leichter warten.\n\n| Motor | Typ | Steuertrieb |\n|-------|-----|-------------|\n| B38 (316i) | Benziner | Steuerkette |\n| B48 (318i–330i) | Benziner | Steuerkette |\n| B58 (340i) | Benziner | Steuerkette |\n| B47 (316d–325d) | Diesel | Steuerkette |\n\n### G20 (ab 2019)\n\nDie aktuelle Generation setzt die Steuerketten-Tradition fort. Alle Motoren – Benziner, Diesel und Mild-Hybrid – nutzen eine **Steuerkette**.\n\n## Die Faustregel für den BMW 3er\n\n| Motortyp | Steuertrieb | Wechsel nötig? |\n|----------|-------------|----------------|\n| Benziner (alle Generationen ab E90) | Steuerkette | Nein (wartungsfrei) |\n| Diesel ab F30 (B47) | Steuerkette | Nein (wartungsfrei) |\n| Diesel E90 (N47) | Steuerkette | Nein, aber auf Geräusche achten! |\n\nEinen Zahnriemen hat der BMW 3er in modernen Generationen (ab E90) nicht mehr. Ältere Modelle (E30, E36, teilweise E46) hatten je nach Motorisierung noch Zahnriemen – diese Baujahre sind heute jedoch fast ausschließlich als Oldtimer oder Youngtimer unterwegs.\n\n## Kosten bei Kettenproblemen\n\nWenn am N47-Diesel Probleme auftreten, sind die Reparaturkosten hoch: Der Austausch der Steuerkette inklusive Arbeit kann je nach Werkstatt zwischen 1.500 und 3.500 Euro kosten – weil die Kette hinten liegt und der Motor praktisch zerlegt werden muss. Bei einem älteren 320d mit N47 ist das eine ernste Kosten-Nutzen-Frage.\n\nAls Fahrer eines E90 mit N47 solltest du auf folgende Warnzeichen achten: Rasselnde oder klackernde Geräusche direkt nach dem Kaltstart, die nach einigen Minuten verschwinden, deuten auf eine längere oder verschlissene Kette hin. Regelmäßige Ölwechsel mit dem vom Hersteller vorgeschriebenen Öl sind die wichtigste Vorbeugemaßnahme – denn die Kettenschmierung ist direkt vom Motoröldruck abhängig. Wer Ölwechselintervalle überzieht, beschleunigt den Kettenverschleiß erheblich.\n\nBei Benzinmotoren der F30- und G20-Generation – also N20, B48 und B58 – gibt es diese Problematik nicht. Diese Motoren gelten als sehr zuverlässig, und die Steuerkette hält in der Praxis problemlos über 200.000 Kilometer, wenn das Fahrzeug regelmäßig gewartet wird.\n\n## BMW 3er mit Motorproblemen verkaufen?\n\nWenn dein BMW 3er mit N47-Kettenproblemen oder einem anderen Motorschaden nicht mehr wirtschaftlich reparierbar ist: Bei ohAuto.de kaufen wir auch BMW 3er mit Motorschaden, Getriebeschaden oder ohne TÜV. Unser B2B-Exportnetzwerk sorgt dafür, dass wir auch für defekte Fahrzeuge faire Preise zahlen. Schick uns deine Fahrzeugdaten – innerhalb von 24 Stunden hast du ein unverbindliches Angebot, inklusive kostenloser Abholung.",
+      "quelle": "ohAuto.de Recherche"
+    },
+    "faq": [
+      {
+        "frage": "Hat der BMW 3er eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der BMW 3er hat einen Steuerkette.",
+        "schemaType": "FAQPage"
+      }
+    ],
+    "meta": {
+      "letzteAktualisierung": "2026-05-31"
+    }
+  },
+  {
+    "id": "renault-clio",
+    "marke": "Renault",
+    "modell": "Clio",
+    "slug": "renault-clio",
+    "generation": "",
+    "steuertrieb": "Beides (je nach Motor)",
+    "quelle": "autosmotor.de",
+    "motoren": [
+      {
+        "bezeichnung": "Clio 1.2 16V",
+        "code": "D4F",
+        "leistung": "55 KW / 75 PS",
+        "bauzeit": "1998–2012",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.6 16V",
+        "code": "K4M",
+        "leistung": "82 KW / 112 PS",
+        "bauzeit": "1998–2005",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.5 dCi",
+        "code": "K9K",
+        "leistung": "47–63 KW",
+        "bauzeit": "2001–2012",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000–150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.2 16V",
+        "code": "D4F",
+        "leistung": "55 KW / 75 PS",
+        "bauzeit": "2005–2014",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.2 TCe",
+        "code": "H5F",
+        "leistung": "74 KW / 100 PS",
+        "bauzeit": "2007–2014",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.5 dCi",
+        "code": "K9K",
+        "leistung": "47–78 KW",
+        "bauzeit": "2005–2014",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "120.000–150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 0.9 TCe",
+        "code": "H4B",
+        "leistung": "66 KW / 90 PS",
+        "bauzeit": "2012–2019",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.2 TCe",
+        "code": "H5F",
+        "leistung": "88 KW / 120 PS",
+        "bauzeit": "2012–2019",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.5 dCi",
+        "code": "K9K",
+        "leistung": "55–79 KW",
+        "bauzeit": "2012–2019",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.0 TCe",
+        "code": "H4D",
+        "leistung": "67–96 KW",
+        "bauzeit": "ab 2019",
+        "steuertrieb": "Zahnriemen",
+        "intervall": "150.000 km"
+      },
+      {
+        "bezeichnung": "Clio 1.6 E-Tech Hybrid",
+        "code": "K4M",
+        "leistung": "105 KW / 143 PS",
+        "bauzeit": "ab 2020",
+        "steuertrieb": "Steuerkette",
+        "intervall": "wartungsfrei"
+      }
+    ],
+    "artikel": {
+      "slug": "renault-clio-steuerkette-oder-zahnriemen",
+      "markdown": "# Renault Clio – Steuerkette oder Zahnriemen?\n\nDu fährst einen Renault Clio und fragst dich, ob dein Motor eine Steuerkette oder einen Zahnriemen hat? Die meisten Clio-Modelle – insbesondere die gängigen Benziner und Dieselmotoren – arbeiten mit einem **Zahnriemen**, der regelmäßig gewechselt werden muss. Neuere Generationen haben jedoch teilweise auf Steuerkette umgestellt. Wir klären, was für deinen Clio gilt.\n\n## Renault Clio – Steuerkette oder Zahnriemen nach Generation\n\n### Clio II (1998 – 2012)\n\nDie zweite Clio-Generation war mit einer Vielzahl von Benzinern und Dieseln erhältlich. Der verbreitete 1.2 16V (D4F) und 1.6 16V (K4M) laufen mit **Zahnriemen**. Der 1.5 dCi (K9K), einer der meistverkauften Diesel in Europa, läuft ebenfalls mit **Zahnriemen** – mit einem Wechselintervall von 120.000 bis 150.000 km.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| D4F (1.2 16V) | Benziner | Zahnriemen | 120.000 km |\n| K4M (1.6 16V) | Benziner | Zahnriemen | 120.000 km |\n| K9K (1.5 dCi) | Diesel | Zahnriemen | 120.000 – 150.000 km |\n\n### Clio III (2005 – 2014)\n\nAuch die dritte Generation setzt überwiegend auf **Zahnriemen**. Der 1.2 16V (D4F), 1.6 16V (K4M) und 1.5 dCi (K9K) bleiben das Rückgrat der Modellreihe – allesamt mit Zahnriemen. Der 1.2 TCe (H5F) brachte mit seinem Turbolader ebenfalls einen **Zahnriemen** mit.\n\n### Clio IV (2012 – 2019)\n\nIm Clio IV kommt erstmals ein neuer Motor zum Einsatz: Der 0.9 TCe (H4B) und der 1.2 TCe (H5F) nutzen weiterhin **Zahnriemen**. Der 1.5 dCi (K9K) bleibt ebenfalls beim Zahnriemen. Eine Ausnahme bildet der **Energy TCe 120** (H5F) in bestimmten Ausführungen, bei dem Renault einen Wechsel zu Steuerkette vorgenommen hat – das sollte im Fahrzeugdatenblatt nachgeprüft werden.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| H4B (0.9 TCe) | Benziner | Zahnriemen | 150.000 km |\n| H5F (1.2 TCe) | Benziner | Zahnriemen | 150.000 km |\n| K9K (1.5 dCi) | Diesel | Zahnriemen | 150.000 km |\n\n### Clio V (ab 2019)\n\nDie aktuelle Clio-Generation modernisiert die Motorenpalette deutlich. Der neue 1.0 TCe (H4D) und der Mild-Hybrid 1.6 E-Tech (K4M) nutzen **Zahnriemen**. Der Vollhybrid (E-Tech Hybrid) setzt auf eine **Steuerkette** im Verbrennungsmotor.\n\n## Die Faustregel für den Renault Clio\n\n| Motortyp | Steuertrieb | Wechsel nötig? |\n|----------|-------------|----------------|\n| Alle Benziner (D4F, K4M, H4B, H5F) | Zahnriemen | Ja (120.000–150.000 km) |\n| 1.5 dCi (K9K, alle Generationen) | Zahnriemen | Ja (120.000–150.000 km) |\n| E-Tech Hybrid (Clio V) | Steuerkette | Nein |\n\nBeim Renault Clio ist der Zahnriemenwechsel also bei fast allen Motorisierungen Pflicht – und bei vielen Modellen unterschätzt, weil der Clio als günstiges Alltagsauto gilt und Wartungskosten oft aufgeschoben werden.\n\n## Kosten beim Zahnriemenwechsel am Clio\n\nEin Zahnriemenwechsel am Renault Clio kostet je nach Motor und Werkstatt zwischen 250 und 550 Euro. Inklusive Wasserpumpe sind es oft 400 bis 750 Euro. Besonders beim K9K-Diesel, der als robust gilt, sollte das Intervall trotzdem strikt eingehalten werden – ein gerissener Zahnriemen führt auch hier zum Motorschaden.\n\n## Renault Clio mit Motorschaden oder Defekten verkaufen?\n\nWenn dein Clio einen gerissenen Zahnriemen, Motorschaden oder einen anderen Defekt hat: Bei ohAuto.de kaufen wir auch Renault Clio mit Motorproblemen, ohne TÜV oder mit hoher Laufleistung. Schick uns deine Fahrzeugdaten und du hast innerhalb von 24 Stunden ein unverbindliches Angebot. Abholung kostenlos, Abmeldung auf Wunsch inklusive.",
+      "quelle": "ohAuto.de Recherche"
+    },
+    "faq": [
+      {
+        "frage": "Hat der Renault Clio eine Steuerkette oder einen Zahnriemen?",
+        "antwort": "Der Renault Clio hat je nach Motorvariante Steuerkette oder Zahnriemen. Siehe die Tabelle oben für Details zu jedem Motor.",
+        "schemaType": "FAQPage"
+      },
+      {
+        "frage": "Wann muss der Zahnriemen beim Renault Clio gewechselt werden?",
+        "antwort": "Laut Herstellerangaben: 120.000 km, 120.000–150.000 km, 150.000 km. Prüfe auch deine Betriebsanleitung für das genaue Intervall deines Motors.",
+        "schemaType": "HowTo"
+      }
+    ],
+    "meta": {
+      "letzteAktualisierung": "2026-05-31"
+    }
   }
 ]

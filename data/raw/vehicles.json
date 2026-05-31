@@ -17271,5 +17271,371 @@
         ]
       }
     ]
+  },
+  {
+    "modell": "Audi A4",
+    "marke": "Audi",
+    "generationen": [
+      {
+        "name": "Audi A4 B6/B7 (2001–2008)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Audi A4 1.8T",
+            "motor_familie": "",
+            "leistung": "110–132 KW",
+            "bauzeit": "2001–2008",
+            "motorcode": "ALT, AWM",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "90.000 km / 4 Jahre"
+          },
+          {
+            "motorisierung": "Audi A4 2.0 TFSI (BFB)",
+            "motor_familie": "",
+            "leistung": "110 KW / 150 PS",
+            "bauzeit": "2004–2008",
+            "motorcode": "BFB",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000 km / 5 Jahre"
+          },
+          {
+            "motorisierung": "Audi A4 2.0 TDI",
+            "motor_familie": "",
+            "leistung": "100–125 KW",
+            "bauzeit": "2004–2008",
+            "motorcode": "BPW, BRE, BNA",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000 km / 5 Jahre"
+          },
+          {
+            "motorisierung": "Audi A4 3.0 TDI",
+            "motor_familie": "",
+            "leistung": "150–176 KW",
+            "bauzeit": "2004–2008",
+            "motorcode": "ASB, BMK",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      },
+      {
+        "name": "Audi A4 B8 (2008–2015)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Audi A4 2.0 TFSI",
+            "motor_familie": "",
+            "leistung": "132–155 KW",
+            "bauzeit": "2008–2015",
+            "motorcode": "CDNB, CDNC, CNCD",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "Audi A4 2.0 TDI",
+            "motor_familie": "",
+            "leistung": "100–130 KW",
+            "bauzeit": "2008–2015",
+            "motorcode": "CAHA, CAHB",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "210.000 km"
+          },
+          {
+            "motorisierung": "Audi A4 3.0 TDI",
+            "motor_familie": "",
+            "leistung": "176–200 KW",
+            "bauzeit": "2008–2015",
+            "motorcode": "CGLC, CGLA",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      },
+      {
+        "name": "Audi A4 B9 (ab 2015)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Audi A4 2.0 TFSI",
+            "motor_familie": "",
+            "leistung": "140–185 KW",
+            "bauzeit": "ab 2015",
+            "motorcode": "DKNA, DKTB",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "Audi A4 2.0 TDI",
+            "motor_familie": "",
+            "leistung": "90–140 KW",
+            "bauzeit": "ab 2015",
+            "motorcode": "DETA, DETB",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "Audi A4 3.0 TDI",
+            "motor_familie": "",
+            "leistung": "210 KW",
+            "bauzeit": "ab 2015",
+            "motorcode": "CSWB",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "modell": "BMW 3er",
+    "marke": "BMW",
+    "generationen": [
+      {
+        "name": "BMW 3er E90/E91/E92/E93 (2005–2012)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "BMW 3er 316i/318i",
+            "motor_familie": "N43",
+            "leistung": "90–105 KW",
+            "bauzeit": "2007–2012",
+            "motorcode": "N43",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 318i/320i",
+            "motor_familie": "N46",
+            "leistung": "95–110 KW",
+            "bauzeit": "2005–2011",
+            "motorcode": "N46",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 323i/325i/330i",
+            "motor_familie": "N52",
+            "leistung": "130–190 KW",
+            "bauzeit": "2005–2012",
+            "motorcode": "N52",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 335i",
+            "motor_familie": "N54",
+            "leistung": "225 KW / 306 PS",
+            "bauzeit": "2006–2012",
+            "motorcode": "N54",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 316d/318d/320d/325d",
+            "motor_familie": "N47",
+            "leistung": "85–150 KW",
+            "bauzeit": "2007–2012",
+            "motorcode": "N47",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei (Kettenprobleme bei N47 bekannt)"
+          }
+        ]
+      },
+      {
+        "name": "BMW 3er F30/F31/F34 (2012–2019)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "BMW 3er 316i",
+            "motor_familie": "B38",
+            "leistung": "85 KW / 116 PS",
+            "bauzeit": "2015–2019",
+            "motorcode": "B38",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 318i/320i/325i/330i",
+            "motor_familie": "B48",
+            "leistung": "100–190 KW",
+            "bauzeit": "2015–2019",
+            "motorcode": "B48",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 340i",
+            "motor_familie": "B58",
+            "leistung": "265 KW / 360 PS",
+            "bauzeit": "2015–2019",
+            "motorcode": "B58",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 316d/318d/320d/325d",
+            "motor_familie": "B47",
+            "leistung": "85–140 KW",
+            "bauzeit": "2015–2019",
+            "motorcode": "B47",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      },
+      {
+        "name": "BMW 3er G20 (ab 2019)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "BMW 3er 318i/320i/330i",
+            "motor_familie": "B48",
+            "leistung": "115–190 KW",
+            "bauzeit": "ab 2019",
+            "motorcode": "B48",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          },
+          {
+            "motorisierung": "BMW 3er 318d/320d/330d",
+            "motor_familie": "B47",
+            "leistung": "110–190 KW",
+            "bauzeit": "ab 2019",
+            "motorcode": "B47",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "modell": "Renault Clio",
+    "marke": "Renault",
+    "generationen": [
+      {
+        "name": "Renault Clio II (1998–2012)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Clio 1.2 16V",
+            "motor_familie": "",
+            "leistung": "55 KW / 75 PS",
+            "bauzeit": "1998–2012",
+            "motorcode": "D4F",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.6 16V",
+            "motor_familie": "",
+            "leistung": "82 KW / 112 PS",
+            "bauzeit": "1998–2005",
+            "motorcode": "K4M",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.5 dCi",
+            "motor_familie": "",
+            "leistung": "47–63 KW",
+            "bauzeit": "2001–2012",
+            "motorcode": "K9K",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000–150.000 km"
+          }
+        ]
+      },
+      {
+        "name": "Renault Clio III (2005–2014)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Clio 1.2 16V",
+            "motor_familie": "",
+            "leistung": "55 KW / 75 PS",
+            "bauzeit": "2005–2014",
+            "motorcode": "D4F",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.2 TCe",
+            "motor_familie": "",
+            "leistung": "74 KW / 100 PS",
+            "bauzeit": "2007–2014",
+            "motorcode": "H5F",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "150.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.5 dCi",
+            "motor_familie": "",
+            "leistung": "47–78 KW",
+            "bauzeit": "2005–2014",
+            "motorcode": "K9K",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "120.000–150.000 km"
+          }
+        ]
+      },
+      {
+        "name": "Renault Clio IV (2012–2019)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Clio 0.9 TCe",
+            "motor_familie": "",
+            "leistung": "66 KW / 90 PS",
+            "bauzeit": "2012–2019",
+            "motorcode": "H4B",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "150.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.2 TCe",
+            "motor_familie": "",
+            "leistung": "88 KW / 120 PS",
+            "bauzeit": "2012–2019",
+            "motorcode": "H5F",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "150.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.5 dCi",
+            "motor_familie": "",
+            "leistung": "55–79 KW",
+            "bauzeit": "2012–2019",
+            "motorcode": "K9K",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "150.000 km"
+          }
+        ]
+      },
+      {
+        "name": "Renault Clio V (ab 2019)",
+        "url": "",
+        "motoren": [
+          {
+            "motorisierung": "Clio 1.0 TCe",
+            "motor_familie": "",
+            "leistung": "67–96 KW",
+            "bauzeit": "ab 2019",
+            "motorcode": "H4D",
+            "steuertrieb": "Zahnriemen",
+            "intervall": "150.000 km"
+          },
+          {
+            "motorisierung": "Clio 1.6 E-Tech Hybrid",
+            "motor_familie": "",
+            "leistung": "105 KW / 143 PS",
+            "bauzeit": "ab 2020",
+            "motorcode": "K4M",
+            "steuertrieb": "Steuerkette",
+            "intervall": "wartungsfrei"
+          }
+        ]
+      }
+    ]
   }
 ]
