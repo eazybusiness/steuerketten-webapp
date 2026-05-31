@@ -26,7 +26,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -56,7 +56,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -86,7 +86,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -116,7 +116,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -146,7 +146,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -184,7 +184,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -251,7 +251,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -321,7 +321,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -575,7 +575,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -850,7 +850,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -1357,7 +1357,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -1921,7 +1921,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -2188,7 +2188,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -2274,7 +2274,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -2373,7 +2373,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -2496,7 +2496,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -2635,7 +2635,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3006,7 +3006,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3467,7 +3467,11 @@
         "intervall": "kein festes Wechselintervall"
       }
     ],
-    "artikel": null,
+    "artikel": {
+      "slug": "mercedes-c-klasse-steuerkette-oder-zahnriemen",
+      "markdown": "# Mercedes C-Klasse – Steuerkette oder Zahnriemen?\n\nDu fährst eine Mercedes C-Klasse und willst wissen, ob dein Motor eine Steuerkette oder einen Zahnriemen hat? Die klare Antwort: Die Mercedes C-Klasse setzt in allen modernen Generationen **ausschließlich auf Steuerkette** – sowohl bei Benzinern als auch bei Dieselmotoren. Einen klassischen Zahnriemen, der regelmäßig gewechselt werden muss, gibt es hier nicht.\n\n## Mercedes C-Klasse – Steuertrieb nach Generation\n\n### W203 (2000 – 2007)\n\nDie C-Klasse W203 mit Vier- und Sechszylindern läuft komplett mit **Steuerkette**. Ob C 180, C 200 Kompressor, C 220 CDI oder C 270 CDI – alle Motoren dieser Generation sind kettengetrieben. Ein fest definierter Wechselintervall ist nicht vorgesehen; die Kette soll bei regulärer Wartung die gesamte Fahrzeuglebensdauer halten.\n\n### W204 (2007 – 2014)\n\nAuch der W204 setzt durchgängig auf **Steuerkette**. Die modernen M271-Benziner (C 180, C 200) sowie die 2.1-Liter CDI-Dieselmotoren (OM651) der C 180d, C 200d, C 220d und C 250d – alle ohne Zahnriemen. Der OM651 gilt als zuverlässig, hat aber einen empfindlichen Kettentrieb beim Dieselpartikelfilter-Betrieb; regelmäßige Ölwechsel sind hier besonders wichtig.\n\n| Motor | Typ | Steuertrieb | Hinweis |\n|-------|-----|-------------|---------|\n| M271 (C 180, C 200) | Benziner | Steuerkette | wartungsfrei |\n| M276 (C 250, C 300) | Benziner | Steuerkette | wartungsfrei |\n| OM651 (C 180d–C 250d) | Diesel | Steuerkette | Ölwechsel nicht verzögern |\n\n### W205 (2014 – 2021)\n\nAuch im W205 gilt: **Steuerkette** in allen Varianten. Die neuen M274-Vierzylinder-Benziner (C 180, C 200, C 250), der M276-Sechszylinder (C 300, C 400) und alle Dieselmotoren der OM651/OM654-Familie laufen ohne Zahnriemen. Auch die AMG-Varianten C 43 und C 63 mit dem M176/M177 V8 nutzen Steuerketten.\n\n| Motor | Typ | Steuertrieb |\n|-------|-----|-------------|\n| M274 (C 180–C 250) | Benziner | Steuerkette |\n| M276 (C 300–C 400) | Benziner | Steuerkette |\n| M177 (AMG C 63) | Benziner | Steuerkette |\n| OM651/OM654 (alle CDI) | Diesel | Steuerkette |\n\n### W206 (ab 2021)\n\nDie aktuelle Generation C-Klasse führt das Konzept fort: Alle Motoren – Benziner, Diesel, Hybrid – nutzen **Steuerkette**. Kein Wechselintervall, keine Fehlerquelle durch vergessene Wartung.\n\n## Die Faustregel für die Mercedes C-Klasse\n\n| Generation | Motortyp | Steuertrieb | Wechsel nötig? |\n|------------|----------|-------------|----------------|\n| W203, W204, W205, W206 | Alle Benziner | Steuerkette | Nein |\n| W203, W204, W205, W206 | Alle Diesel | Steuerkette | Nein |\n\n**Fazit:** Bei der Mercedes C-Klasse gibt es nichts zu wechseln. Regelmäßige Ölwechsel nach Herstellervorgabe sind trotzdem Pflicht – besonders bei Dieselmotoren, da die Kettenschmierung vom Motoröl abhängt.\n\n## Mercedes C-Klasse mit Defekt oder Schäden verkaufen?\n\nWenn deine C-Klasse einen Kettendefekt, Motorschaden oder einen anderen Defekt hat, der eine Reparatur unwirtschaftlich macht: Bei ohAuto.de kaufen wir auch Mercedes C-Klasse mit Schäden, ohne TÜV oder mit hohem Kilometerstand. Dank unserem internationalen Exportnetzwerk zahlen wir faire Preise auch für Fahrzeuge, die in Deutschland nicht mehr wirtschaftlich instand zu setzen sind. Schick uns deine Fahrzeugdaten per WhatsApp, Anruf oder Online-Formular auf ohAuto.de – innerhalb von 24 Stunden erhältst du ein unverbindliches Angebot. Abholung kostenlos, KFZ-Abmeldung auf Wunsch inklusive. Kein Aufwand für dich, sofortige Bezahlung beim Termin.",
+      "quelle": "ohAuto.de Recherche"
+    },
     "faq": [
       {
         "frage": "Hat der Mercedes C-Klasse eine Steuerkette oder einen Zahnriemen?",
@@ -3476,7 +3480,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3530,7 +3534,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3741,7 +3745,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3811,7 +3815,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3894,7 +3898,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -3924,7 +3928,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -4464,7 +4468,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -4563,7 +4567,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -5086,7 +5090,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -5409,7 +5413,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -5620,7 +5624,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -5775,7 +5779,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -6234,7 +6238,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -6365,7 +6369,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -6488,7 +6492,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -7419,7 +7423,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -7774,7 +7778,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -7865,7 +7869,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -8052,7 +8056,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -8375,7 +8379,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -9066,7 +9070,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -9413,7 +9417,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -9906,7 +9910,11 @@
         "intervall": "150.000 km"
       }
     ],
-    "artikel": null,
+    "artikel": {
+      "slug": "skoda-octavia-steuerkette-oder-zahnriemen",
+      "markdown": "# Skoda Octavia – Steuerkette oder Zahnriemen?\n\nDu fährst einen Skoda Octavia und fragst dich, ob dein Motor eine Steuerkette oder einen Zahnriemen hat? Die Antwort lautet: Es kommt auf Motor und Generation an. Als Teil des VW-Konzerns teilt der Octavia viele Motoren mit VW Golf und Seat Leon – und damit auch die bekannte Regel: TSI-Benziner mit Steuerkette, TDI-Diesel und kleinere MPI-Benziner mit Zahnriemen.\n\n## Skoda Octavia – Steuerkette oder Zahnriemen nach Generation\n\n### Octavia II (Typ 1Z, 2004 – 2013)\n\nDie zweite Generation des Octavia war noch stark gemischt. Einfache Benziner (1.4 16V, 1.6 MPI) liefen mit **Zahnriemen**, ebenso die TDI-Dieselmotoren (1.9 TDI, 2.0 TDI). Die neueren TSI- und FSI-Benziner (1.4 TSI, 1.6 FSI, 1.8 TSI) wechselten dagegen zur **Steuerkette**.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| 1.4 16V, 1.6 MPI | Benziner | Zahnriemen | 180.000 km |\n| 1.6 FSI, 1.4 TSI, 1.8 TSI | Benziner | Steuerkette | wartungsfrei |\n| 1.9 TDI | Diesel | Zahnriemen | 120.000 km |\n| 1.6 TDI, 2.0 TDI | Diesel | Zahnriemen | 180.000 – 300.000 km |\n\n### Octavia III (Typ 5E, 2012 – 2020)\n\nMit dem Octavia III wurde die Motorenpalette modernisiert. Kleine 1.0 TSI- und 1.4 TSI-Benziner liefen im EA211-Motorenbaukasten zunächst noch mit **Zahnriemen**. Größere 1.8 TSI und 2.0 TSI (EA888) wurden mit **Steuerkette** ausgestattet. TDI-Dieselmotoren (1.6 TDI, 2.0 TDI) behielten den **Zahnriemen**.\n\n| Motor | Steuertrieb | Wechselintervall |\n|-------|-------------|-----------------|\n| 1.0 TSI (EA211) | Zahnriemen | 210.000 km |\n| 1.4 TSI (EA211) | Zahnriemen | 210.000 km |\n| 1.5 TSI ACT (EA211 evo) | Zahnriemen | 210.000 km |\n| 1.8 TSI, 2.0 TSI (EA888) | Steuerkette | wartungsfrei |\n| 1.6 TDI, 2.0 TDI | Zahnriemen | 210.000 km |\n\n### Octavia IV (ab 2020)\n\nDer aktuelle Octavia IV mit neuem EA211-evo-Motor bringt eine wichtige Änderung: Der 1.5 TSI verfügt nun über eine **Steuerkette**. Auch die Plug-in-Hybrid-Variante (1.4 TSI iV) nutzt eine Steuerkette. TDI-Diesel bleiben weiterhin mit Zahnriemen.\n\n## Die Faustregel für den Skoda Octavia\n\n| Motortyp | Steuertrieb | Wechsel nötig? |\n|----------|-------------|----------------|\n| 1.8 TSI / 2.0 TSI (EA888) | Steuerkette | Nein |\n| 1.5 TSI (Octavia IV) | Steuerkette | Nein |\n| 1.0 TSI / 1.4 TSI (EA211, Octavia III) | Zahnriemen | Ja (210.000 km) |\n| 1.9 TDI / 1.6 TDI / 2.0 TDI | Zahnriemen | Ja (120.000 – 210.000 km) |\n\n## Kosten beim Zahnriemenwechsel\n\nEin Zahnriemenwechsel am Skoda Octavia kostet je nach Motor und Werkstatt zwischen 350 und 750 Euro. Inklusive Wasserpumpe können es 500 bis 1.000 Euro werden. Der 1.9 TDI aus dem Octavia II hat ein kurzes Wechselintervall von 120.000 km – wer das versäumt, riskiert einen kapitalen Motorschaden.\n\n## Skoda Octavia mit Motorschaden oder Defekten verkaufen?\n\nWenn dein Octavia einen gerissenen Zahnriemen, Motorschaden oder anderen Defekt hat: Bei ohAuto.de kaufen wir auch Skoda Octavia in schlechtem Zustand – mit Motorschaden, ohne TÜV oder mit hoher Laufleistung. Schick uns deine Fahrzeugdaten und du hast innerhalb von 24 Stunden ein unverbindliches Angebot. Abholung kostenlos, Abmeldung auf Wunsch inklusive.",
+      "quelle": "ohAuto.de Recherche"
+    },
     "faq": [
       {
         "frage": "Hat der Skoda Octavia eine Steuerkette oder einen Zahnriemen?",
@@ -9920,7 +9928,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10043,7 +10051,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10174,7 +10182,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10321,7 +10329,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10484,7 +10492,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10538,7 +10546,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10629,7 +10637,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -10802,7 +10810,11 @@
         "intervall": "kein festes Wechselintervall"
       }
     ],
-    "artikel": null,
+    "artikel": {
+      "slug": "toyota-yaris-steuerkette-oder-zahnriemen",
+      "markdown": "# Toyota Yaris – Steuerkette oder Zahnriemen?\n\nDu fährst einen Toyota Yaris und willst wissen, ob dein Motor eine Steuerkette oder einen Zahnriemen hat? Die Antwort hängt vom Baujahr und der Motorisierung ab. Ältere Yaris-Modelle fahren überwiegend mit **Zahnriemen**, neuere Generationen setzen auf **Steuerkette**. Wir zeigen dir, was für deinen Yaris gilt – und ob ein Wechselintervall zu beachten ist.\n\n## Toyota Yaris – Steuerkette oder Zahnriemen nach Generation\n\n### Yaris P1 (1999 – 2005)\n\nDie erste Generation des Yaris war ein echter Stadtflitzer mit einfachen Motoren. Der weit verbreitete 1.0-Liter-Benziner (1SZ-FE) und der 1.3-Liter (2NZ-FE) laufen beide mit **Zahnriemen**. Die Wechselintervalle liegen bei 100.000 bis 120.000 km oder alle 5 Jahre.\n\n### Yaris P2 (2005 – 2011)\n\nDie zweite Generation brachte weiterentwickelte Motoren. Der 1.0 VVT-i (1KR-FE) und der 1.3 VVT-i (2SZ-FE) setzen ebenfalls auf **Zahnriemen**. Der 1.4-Liter-Diesel (1ND-TV) – ein seltener Diesel im Kleinwagensegment – nutzt ebenfalls einen **Zahnriemen**.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| 1KR-FE (1.0 VVT-i) | Benziner | Zahnriemen | 100.000 km |\n| 2SZ-FE (1.3 VVT-i) | Benziner | Zahnriemen | 100.000 km |\n| 1ND-TV (1.4 D-4D) | Diesel | Zahnriemen | 100.000 km |\n\n### Yaris P3 / XP13 (2011 – 2020)\n\nAb der dritten Generation hält die **Steuerkette** Einzug. Der neue 1.0-Liter (1KR-FE II) und der 1.33 Dual VVT-i (1NR-FE) sind mit **Steuerkette** ausgestattet. Auch der Toyota Yaris Hybrid (1.5 VVT-i, 1NZ-FXE) nutzt eine Steuerkette – hier ist grundsätzlich kein Wechselintervall vorgesehen.\n\n| Motor | Typ | Steuertrieb | Wechselintervall |\n|-------|-----|-------------|-----------------|\n| 1KR-FE II (1.0) | Benziner | Steuerkette | wartungsfrei |\n| 1NR-FE (1.33 VVT-i) | Benziner | Steuerkette | wartungsfrei |\n| 1NZ-FXE (Hybrid 1.5) | Hybrid | Steuerkette | wartungsfrei |\n\n### Yaris XP21 (ab 2020)\n\nDer aktuelle Yaris – erstmals auf der TNGA-Plattform – wird ausschließlich mit 1.5-Liter-Dreizylinder-Benziner und als Hybrid angeboten. Beide Varianten (M15A-FKS und M15A-FXE) laufen mit **Steuerkette**.\n\n## Die Faustregel für den Toyota Yaris\n\n| Generation | Motortyp | Steuertrieb | Wechsel nötig? |\n|------------|----------|-------------|----------------|\n| P1, P2 (bis 2011) | Alle Benziner + Diesel | Zahnriemen | Ja (100.000 km) |\n| P3 (2011–2020) | 1.0 / 1.33 / Hybrid | Steuerkette | Nein |\n| XP21 (ab 2020) | Alle Motoren | Steuerkette | Nein |\n\n## Kosten beim Zahnriemenwechsel\n\nEin Zahnriemenwechsel am Toyota Yaris (P1/P2) kostet je nach Werkstatt zwischen 200 und 450 Euro – dank der kleinen Motoren ist der Aufwand überschaubar. Dennoch gilt: Ein gerissener Zahnriemen bedeutet in fast allen Fällen einen teuren Motorschaden. Bei den kleinen Toyota-Motoren handelt es sich um sogenannte \"Freiläufer\" – der Motorschaden hält sich im Vergleich zu großen Motoren zwar in Grenzen, ist aber dennoch in der Regel wirtschaftlich nicht sinnvoll zu reparieren.\n\nBeim 1.4 dCi-Diesel ist besondere Vorsicht geboten: Dieser Motor gilt zwar als zuverlässig, hat aber ein relativ kurzes Wechselintervall von 100.000 km. Wer ein älteres Yaris-Dieselmodell kauft, sollte den Zahnriemenwechsel im Serviceheft unbedingt prüfen oder als erste Maßnahme einplanen.\n\n## Toyota Yaris mit Defekt oder hoher Laufleistung verkaufen?\n\nWenn dein Yaris einen Motorschaden hat, die Abgasuntersuchung nicht mehr besteht oder ein Wechsel ansteht: Bei ohAuto.de kaufen wir auch Toyota Yaris in jedem Zustand – mit Defekten, ohne TÜV oder mit hoher Laufleistung. Schick uns deine Fahrzeugdaten und du hast innerhalb von 24 Stunden ein unverbindliches Angebot. Abholung kostenlos, Abmeldung auf Wunsch inklusive.",
+      "quelle": "ohAuto.de Recherche"
+    },
     "faq": [
       {
         "frage": "Hat der Toyota Yaris eine Steuerkette oder einen Zahnriemen?",
@@ -10811,7 +10823,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -11022,7 +11034,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -12277,7 +12289,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -12632,7 +12644,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -12691,7 +12703,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -13847,7 +13859,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -14563,7 +14575,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -14806,7 +14818,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -15081,7 +15093,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -15268,7 +15280,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   },
   {
@@ -15623,7 +15635,7 @@
       }
     ],
     "meta": {
-      "letzteAktualisierung": "2026-04-30"
+      "letzteAktualisierung": "2026-05-31"
     }
   }
 ]

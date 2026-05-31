@@ -33,6 +33,12 @@ const ARTICLE_MAP = {
   'VW Polo': 'vw-polo-steuerkette-oder-zahnriemen',
   'Opel Astra': 'opel-astra-steuerkette-oder-zahnriemen',
   'Ford Focus': 'ford-focus-steuerkette-oder-zahnriemen',
+  'Audi A4': 'audi-a4-steuerkette-oder-zahnriemen',
+  'BMW 3er': 'bmw-3er-steuerkette-oder-zahnriemen',
+  'Mercedes C-Klasse': 'mercedes-c-klasse-steuerkette-oder-zahnriemen',
+  'Renault Clio': 'renault-clio-steuerkette-oder-zahnriemen',
+  'Skoda Octavia': 'skoda-octavia-steuerkette-oder-zahnriemen',
+  'Toyota Yaris': 'toyota-yaris-steuerkette-oder-zahnriemen',
 };
 
 /**
